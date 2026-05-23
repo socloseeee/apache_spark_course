@@ -1,0 +1,25 @@
+# Секреты — НИКОГДА не коммитим
+.env
+
+# Данные и выгрузки
+data/
+*.parquet
+*.csv.gz
+
+# JAR-драйверы (скачиваются отдельно)
+jars/*.jar
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
