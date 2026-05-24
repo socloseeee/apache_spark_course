@@ -1,12 +1,18 @@
 # Секреты — НИКОГДА не коммитим
 .env
 
-# Данные и выгрузки
+# Сгенерированные данные (создаются ноутбуком 00, в git не нужны)
+notebooks/landing/
+notebooks/spark-warehouse/
 data/
 *.parquet
 *.csv.gz
 
-# JAR-драйверы (скачиваются отдельно)
+# Jupyter служебное
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# JAR-драйверы (если скачиваются локально)
 jars/*.jar
 
 # Python
@@ -14,12 +20,9 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-.ipynb_checkpoints/
 
-# OS
+# OS / IDE
 .DS_Store
 Thumbs.db
-
-# IDE
 .idea/
 .vscode/

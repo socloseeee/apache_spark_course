@@ -135,7 +135,7 @@ services:
 
   # ─── Jupyter + Spark: основная рабочая среда ───
   jupyter:
-    image: quay.io/jupyter/pyspark-notebook:latest
+    image: quay.io/jupyter/pyspark-notebook:spark-3.5.3
     container_name: asc-jupyter
     depends_on:
       minio:
