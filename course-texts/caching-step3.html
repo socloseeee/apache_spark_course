@@ -1,0 +1,23 @@
+<h2>cache и persist: выбираем уровень хранения</h2>
+<p>В этом уроке речь о <strong>DataFrame в PySpark 3.5.3</strong>. <code>cache()</code> использует уровень <code>MEMORY_AND_DISK_DESER</code>. Такой же уровень выбирает <code>persist()</code> без аргумента.</p>
+<pre><code class="language-python">from pyspark import StorageLevel
+
+df.cache()
+# Эквивалентный вариант для DataFrame без назначенного уровня:
+# df.persist(StorageLevel.MEMORY_AND_DISK_DESER)</code></pre>
+<p><code>persist(level)</code> позволяет выбрать другой способ хранения. Он тоже ленивый: блоки появляются при выполнении действий, которые вычисляют эти данные.</p>
+<h3>Основные уровни</h3>
+<table><thead><tr><th>Уровень</th><th>Как хранит блоки</th><th>Что учитывать</th></tr></thead><tbody>
+<tr><td><code>MEMORY_AND_DISK_DESER</code></td><td>В памяти; не поместившиеся блоки — на диске</td><td>Уровень по умолчанию для DataFrame; польза зависит от повторного использования</td></tr>
+<tr><td><code>MEMORY_ONLY</code></td><td>Только в памяти</td><td>Не сохранённые или вытесненные блоки придётся вычислять заново при обращении к ним</td></tr>
+<tr><td><code>DISK_ONLY</code></td><td>На локальных дисках executors</td><td>Чтение с диска может быть выгоднее повторного дорогого вычисления; это нужно измерять</td></tr>
+</tbody></table>
+<p><code>MEMORY_AND_DISK</code> тоже существует, но это <strong>другой</strong> уровень, не точное имя значения по умолчанию у DataFrame. Название <code>MEMORY_ONLY_SER</code> из примеров Scala нельзя переносить в PySpark 3.5.3: такой константы в его стандартном Python API нет.</p>
+<h3>Как сменить уровень</h3>
+<p>Повторный вызов <code>persist</code> с другим уровнем не переключает уже сохранённый DataFrame. Сначала освободите прежний кэш:</p>
+<pre><code class="language-python">df.unpersist(blocking=True)
+df.persist(StorageLevel.DISK_ONLY)
+print(df.storageLevel)  # проверить выбранный уровень в настоящем Spark</code></pre>
+<p>Уровни с суффиксом <code>_2</code> запрашивают две копии блоков. Размещение реплик требует доступных executors и ресурсов; в локальной практике это не отдельная система резервного копирования.</p>
+<p><strong>Для собеседования:</strong> назовите API и версию, объясните повторное использование результата и компромисс памяти, диска и пересчёта. Универсального «самого быстрого» уровня нет.</p>
+<p>Справка: <a href="https://spark.apache.org/docs/3.5.7/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.persist.html">DataFrame.persist в ветке 3.5</a>, <a href="https://spark.apache.org/docs/3.5.6/api/python/reference/api/pyspark.StorageLevel.html">StorageLevel</a>.</p>

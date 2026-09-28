@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "clients_unchanged": true,
+    "accounts_unchanged": true,
+    "transactions_unchanged": true,
+    "clients_scd2_unchanged": true,
+    "gold_unchanged": true,
+    "clickhouse_unchanged": true,
+    "bronze_no_duplicate_offsets": true,
+    "bronze_same_after_restart": true,
+    "bronze_offset_ranges_complete": true,
+    "volume_by_segment_gold_sum": true,
+    "volume_by_segment_gold_count": true,
+    "volume_by_segment_clickhouse_sum": true,
+    "volume_by_segment_clickhouse_count": true,
+    "daily_purchases_gold_sum": true,
+    "daily_purchases_gold_count": true,
+    "daily_purchases_clickhouse_sum": true,
+    "daily_purchases_clickhouse_count": true,
+    "volume_by_segment_clickhouse_equals_gold": true,
+    "top_clients_clickhouse_equals_gold": true,
+    "daily_purchases_clickhouse_equals_gold": true
+  },
+  "passed": true,
+  "before_bronze_count": 617670,
+  "after_bronze_count": 617670,
+  "purchase_count": 51469,
+  "purchase_amount": "1288142925.17"
+}

@@ -1,0 +1,728 @@
+{
+  "clients": {
+    "count": 9523,
+    "canonical_rows_sha256": "b1a13e0578c2dab1fb7f107deb2901021f894dd5fc27418533a572ce4de47ee6"
+  },
+  "accounts": {
+    "count": 13542,
+    "canonical_rows_sha256": "dbc61af850176ad6da9ca08c13e9ed25fc781b9930bea720a2cad8e6084d1367"
+  },
+  "transactions": {
+    "count": 171950,
+    "canonical_rows_sha256": "720462b6db2396e8534ff1cbd20c5f640e831012acb968c823daec5d737e78cb",
+    "amount_sum": "4292891512.64",
+    "completed_purchase_count": 51469,
+    "completed_purchase_amount": "1288142925.17"
+  },
+  "clients_scd2": {
+    "count": 10008,
+    "canonical_rows_sha256": "6053d8b54dcf50b613d2b59ec22a84cd32037da5a7f9dc1e58d5b3bba19da492",
+    "current_count": 9523,
+    "expired_count": 485
+  },
+  "bronze": {
+    "count": 617670,
+    "duplicate_offsets": 0,
+    "offsets": [
+      {
+        "topic": "transactions",
+        "partition": 0,
+        "min": 0,
+        "max": 617669,
+        "count": 617670
+      }
+    ]
+  },
+  "gold": {
+    "volume_by_segment": [
+      {
+        "segment": "affluent",
+        "purchase_volume": "249996144.52",
+        "tx_count": 10104,
+        "avg_purchase_amount": "24742.29"
+      },
+      {
+        "segment": "mass",
+        "purchase_volume": "752107365.62",
+        "tx_count": 29946,
+        "avg_purchase_amount": "25115.45"
+      },
+      {
+        "segment": "private",
+        "purchase_volume": "286039415.03",
+        "tx_count": 11419,
+        "avg_purchase_amount": "25049.43"
+      }
+    ],
+    "top_clients": [
+      {
+        "client_id": 232,
+        "city": "Сочи",
+        "purchase_volume": "232226.58",
+        "full_name": "Алексей Иванов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 290,
+        "city": "Сочи",
+        "purchase_volume": "216748.63",
+        "full_name": "Иван Морозов",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 329,
+        "city": "Сочи",
+        "purchase_volume": "215858.26",
+        "full_name": "Андрей Морозов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 394,
+        "city": "Сочи",
+        "purchase_volume": "265794.49",
+        "full_name": "Мария Смирнов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 494,
+        "city": "Сочи",
+        "purchase_volume": "237891.78",
+        "full_name": "Татьяна Смирнов",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 535,
+        "city": "Москва",
+        "purchase_volume": "421486.58",
+        "full_name": "Сергей Смирнов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 640,
+        "city": "Санкт-Петербург",
+        "purchase_volume": "402043.96",
+        "full_name": "Михаил Новиков",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 845,
+        "city": "Новосибирск",
+        "purchase_volume": "394813.27",
+        "full_name": "Елена Лебедев",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 1103,
+        "city": "Ростов-на-Дону",
+        "purchase_volume": "393184.14",
+        "full_name": "Елена Волков",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 1502,
+        "city": "Москва",
+        "purchase_volume": "437994.08",
+        "full_name": "Татьяна Смирнов",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 1704,
+        "city": "Казань",
+        "purchase_volume": "446059.97",
+        "full_name": "Мария Попов",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 1882,
+        "city": "Самара",
+        "purchase_volume": "405795.28",
+        "full_name": "Дмитрий Кузнецов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 1958,
+        "city": "Екатеринбург",
+        "purchase_volume": "476557.98",
+        "full_name": "Михаил Козлов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 2087,
+        "city": "Екатеринбург",
+        "purchase_volume": "448955.44",
+        "full_name": "Ольга Соколов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 2444,
+        "city": "Казань",
+        "purchase_volume": "405882.28",
+        "full_name": "Михаил Иванов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 2496,
+        "city": "Самара",
+        "purchase_volume": "421404.97",
+        "full_name": "Андрей Кузнецов",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 3245,
+        "city": "Краснодар",
+        "purchase_volume": "412813.00",
+        "full_name": "Анна Попов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 3339,
+        "city": "Москва",
+        "purchase_volume": "409547.05",
+        "full_name": "Наталья Лебедев",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 3513,
+        "city": "Ростов-на-Дону",
+        "purchase_volume": "481696.97",
+        "full_name": "Елена Орлов",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 3751,
+        "city": "Санкт-Петербург",
+        "purchase_volume": "419075.24",
+        "full_name": "Сергей Волков",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 4093,
+        "city": "Краснодар",
+        "purchase_volume": "413945.88",
+        "full_name": "Анна Смирнов",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 4218,
+        "city": "Екатеринбург",
+        "purchase_volume": "498180.18",
+        "full_name": "Иван Волков",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 4383,
+        "city": "Санкт-Петербург",
+        "purchase_volume": "426093.36",
+        "full_name": "Дмитрий Волков",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 4434,
+        "city": "Ростов-на-Дону",
+        "purchase_volume": "485416.47",
+        "full_name": "Алексей Кузнецов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 4504,
+        "city": "Новосибирск",
+        "purchase_volume": "420983.10",
+        "full_name": "Елена Петров",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 4752,
+        "city": "Екатеринбург",
+        "purchase_volume": "469410.31",
+        "full_name": "Анна Иванов",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 4771,
+        "city": "Санкт-Петербург",
+        "purchase_volume": "419896.18",
+        "full_name": "Дмитрий Орлов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 5455,
+        "city": "Новосибирск",
+        "purchase_volume": "401363.60",
+        "full_name": "Татьяна Волков",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 5666,
+        "city": "Краснодар",
+        "purchase_volume": "467213.52",
+        "full_name": "Татьяна Смирнов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 5690,
+        "city": "Санкт-Петербург",
+        "purchase_volume": "426459.84",
+        "full_name": "Ольга Соколов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 5856,
+        "city": "Екатеринбург",
+        "purchase_volume": "511520.42",
+        "full_name": "Алексей Морозов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 5971,
+        "city": "Казань",
+        "purchase_volume": "445233.35",
+        "full_name": "Андрей Иванов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 6557,
+        "city": "Самара",
+        "purchase_volume": "408174.76",
+        "full_name": "Андрей Петров",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 6979,
+        "city": "Ростов-на-Дону",
+        "purchase_volume": "418000.44",
+        "full_name": "Ольга Морозов",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 7053,
+        "city": "Краснодар",
+        "purchase_volume": "439576.12",
+        "full_name": "Мария Лебедев",
+        "rank_in_city": 2
+      },
+      {
+        "client_id": 7088,
+        "city": "Краснодар",
+        "purchase_volume": "428225.03",
+        "full_name": "Михаил Морозов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 7135,
+        "city": "Ростов-на-Дону",
+        "purchase_volume": "448132.98",
+        "full_name": "Алексей Лебедев",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 7921,
+        "city": "Казань",
+        "purchase_volume": "414031.76",
+        "full_name": "Татьяна Новиков",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 8444,
+        "city": "Новосибирск",
+        "purchase_volume": "373222.65",
+        "full_name": "Елена Козлов",
+        "rank_in_city": 5
+      },
+      {
+        "client_id": 9097,
+        "city": "Москва",
+        "purchase_volume": "418468.30",
+        "full_name": "Елена Смирнов",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 9452,
+        "city": "Москва",
+        "purchase_volume": "463247.68",
+        "full_name": "Ольга Соколов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 9677,
+        "city": "Новосибирск",
+        "purchase_volume": "374278.60",
+        "full_name": "Андрей Лебедев",
+        "rank_in_city": 4
+      },
+      {
+        "client_id": 9688,
+        "city": "Казань",
+        "purchase_volume": "473904.41",
+        "full_name": "Елена Смирнов",
+        "rank_in_city": 1
+      },
+      {
+        "client_id": 9708,
+        "city": "Самара",
+        "purchase_volume": "415764.05",
+        "full_name": "Елена Морозов",
+        "rank_in_city": 3
+      },
+      {
+        "client_id": 9803,
+        "city": "Самара",
+        "purchase_volume": "445370.94",
+        "full_name": "Алексей Иванов",
+        "rank_in_city": 1
+      }
+    ],
+    "daily_purchases": [
+      {
+        "dt": "2026-01-31",
+        "tx_count": 51469,
+        "purchase_volume": "1288142925.17"
+      }
+    ]
+  },
+  "clickhouse": {
+    "volume_by_segment": [
+      {
+        "segment": "affluent",
+        "purchase_volume": "249996144.52",
+        "tx_count": "10104",
+        "avg_purchase_amount": "24742.29"
+      },
+      {
+        "segment": "mass",
+        "purchase_volume": "752107365.62",
+        "tx_count": "29946",
+        "avg_purchase_amount": "25115.45"
+      },
+      {
+        "segment": "private",
+        "purchase_volume": "286039415.03",
+        "tx_count": "11419",
+        "avg_purchase_amount": "25049.43"
+      }
+    ],
+    "top_clients": [
+      {
+        "city": "Екатеринбург",
+        "rank_in_city": 1,
+        "client_id": "5856",
+        "purchase_volume": "511520.42",
+        "full_name": "Алексей Морозов"
+      },
+      {
+        "city": "Екатеринбург",
+        "rank_in_city": 2,
+        "client_id": "4218",
+        "purchase_volume": "498180.18",
+        "full_name": "Иван Волков"
+      },
+      {
+        "city": "Екатеринбург",
+        "rank_in_city": 3,
+        "client_id": "1958",
+        "purchase_volume": "476557.98",
+        "full_name": "Михаил Козлов"
+      },
+      {
+        "city": "Екатеринбург",
+        "rank_in_city": 4,
+        "client_id": "4752",
+        "purchase_volume": "469410.31",
+        "full_name": "Анна Иванов"
+      },
+      {
+        "city": "Екатеринбург",
+        "rank_in_city": 5,
+        "client_id": "2087",
+        "purchase_volume": "448955.44",
+        "full_name": "Ольга Соколов"
+      },
+      {
+        "city": "Казань",
+        "rank_in_city": 1,
+        "client_id": "9688",
+        "purchase_volume": "473904.41",
+        "full_name": "Елена Смирнов"
+      },
+      {
+        "city": "Казань",
+        "rank_in_city": 2,
+        "client_id": "1704",
+        "purchase_volume": "446059.97",
+        "full_name": "Мария Попов"
+      },
+      {
+        "city": "Казань",
+        "rank_in_city": 3,
+        "client_id": "5971",
+        "purchase_volume": "445233.35",
+        "full_name": "Андрей Иванов"
+      },
+      {
+        "city": "Казань",
+        "rank_in_city": 4,
+        "client_id": "7921",
+        "purchase_volume": "414031.76",
+        "full_name": "Татьяна Новиков"
+      },
+      {
+        "city": "Казань",
+        "rank_in_city": 5,
+        "client_id": "2444",
+        "purchase_volume": "405882.28",
+        "full_name": "Михаил Иванов"
+      },
+      {
+        "city": "Краснодар",
+        "rank_in_city": 1,
+        "client_id": "5666",
+        "purchase_volume": "467213.52",
+        "full_name": "Татьяна Смирнов"
+      },
+      {
+        "city": "Краснодар",
+        "rank_in_city": 2,
+        "client_id": "7053",
+        "purchase_volume": "439576.12",
+        "full_name": "Мария Лебедев"
+      },
+      {
+        "city": "Краснодар",
+        "rank_in_city": 3,
+        "client_id": "7088",
+        "purchase_volume": "428225.03",
+        "full_name": "Михаил Морозов"
+      },
+      {
+        "city": "Краснодар",
+        "rank_in_city": 4,
+        "client_id": "4093",
+        "purchase_volume": "413945.88",
+        "full_name": "Анна Смирнов"
+      },
+      {
+        "city": "Краснодар",
+        "rank_in_city": 5,
+        "client_id": "3245",
+        "purchase_volume": 412813,
+        "full_name": "Анна Попов"
+      },
+      {
+        "city": "Москва",
+        "rank_in_city": 1,
+        "client_id": "9452",
+        "purchase_volume": "463247.68",
+        "full_name": "Ольга Соколов"
+      },
+      {
+        "city": "Москва",
+        "rank_in_city": 2,
+        "client_id": "1502",
+        "purchase_volume": "437994.08",
+        "full_name": "Татьяна Смирнов"
+      },
+      {
+        "city": "Москва",
+        "rank_in_city": 3,
+        "client_id": "535",
+        "purchase_volume": "421486.58",
+        "full_name": "Сергей Смирнов"
+      },
+      {
+        "city": "Москва",
+        "rank_in_city": 4,
+        "client_id": "9097",
+        "purchase_volume": "418468.3",
+        "full_name": "Елена Смирнов"
+      },
+      {
+        "city": "Москва",
+        "rank_in_city": 5,
+        "client_id": "3339",
+        "purchase_volume": "409547.05",
+        "full_name": "Наталья Лебедев"
+      },
+      {
+        "city": "Новосибирск",
+        "rank_in_city": 1,
+        "client_id": "4504",
+        "purchase_volume": "420983.1",
+        "full_name": "Елена Петров"
+      },
+      {
+        "city": "Новосибирск",
+        "rank_in_city": 2,
+        "client_id": "5455",
+        "purchase_volume": "401363.6",
+        "full_name": "Татьяна Волков"
+      },
+      {
+        "city": "Новосибирск",
+        "rank_in_city": 3,
+        "client_id": "845",
+        "purchase_volume": "394813.27",
+        "full_name": "Елена Лебедев"
+      },
+      {
+        "city": "Новосибирск",
+        "rank_in_city": 4,
+        "client_id": "9677",
+        "purchase_volume": "374278.6",
+        "full_name": "Андрей Лебедев"
+      },
+      {
+        "city": "Новосибирск",
+        "rank_in_city": 5,
+        "client_id": "8444",
+        "purchase_volume": "373222.65",
+        "full_name": "Елена Козлов"
+      },
+      {
+        "city": "Ростов-на-Дону",
+        "rank_in_city": 1,
+        "client_id": "4434",
+        "purchase_volume": "485416.47",
+        "full_name": "Алексей Кузнецов"
+      },
+      {
+        "city": "Ростов-на-Дону",
+        "rank_in_city": 2,
+        "client_id": "3513",
+        "purchase_volume": "481696.97",
+        "full_name": "Елена Орлов"
+      },
+      {
+        "city": "Ростов-на-Дону",
+        "rank_in_city": 3,
+        "client_id": "7135",
+        "purchase_volume": "448132.98",
+        "full_name": "Алексей Лебедев"
+      },
+      {
+        "city": "Ростов-на-Дону",
+        "rank_in_city": 4,
+        "client_id": "6979",
+        "purchase_volume": "418000.44",
+        "full_name": "Ольга Морозов"
+      },
+      {
+        "city": "Ростов-на-Дону",
+        "rank_in_city": 5,
+        "client_id": "1103",
+        "purchase_volume": "393184.14",
+        "full_name": "Елена Волков"
+      },
+      {
+        "city": "Самара",
+        "rank_in_city": 1,
+        "client_id": "9803",
+        "purchase_volume": "445370.94",
+        "full_name": "Алексей Иванов"
+      },
+      {
+        "city": "Самара",
+        "rank_in_city": 2,
+        "client_id": "2496",
+        "purchase_volume": "421404.97",
+        "full_name": "Андрей Кузнецов"
+      },
+      {
+        "city": "Самара",
+        "rank_in_city": 3,
+        "client_id": "9708",
+        "purchase_volume": "415764.05",
+        "full_name": "Елена Морозов"
+      },
+      {
+        "city": "Самара",
+        "rank_in_city": 4,
+        "client_id": "6557",
+        "purchase_volume": "408174.76",
+        "full_name": "Андрей Петров"
+      },
+      {
+        "city": "Самара",
+        "rank_in_city": 5,
+        "client_id": "1882",
+        "purchase_volume": "405795.28",
+        "full_name": "Дмитрий Кузнецов"
+      },
+      {
+        "city": "Санкт-Петербург",
+        "rank_in_city": 1,
+        "client_id": "5690",
+        "purchase_volume": "426459.84",
+        "full_name": "Ольга Соколов"
+      },
+      {
+        "city": "Санкт-Петербург",
+        "rank_in_city": 2,
+        "client_id": "4383",
+        "purchase_volume": "426093.36",
+        "full_name": "Дмитрий Волков"
+      },
+      {
+        "city": "Санкт-Петербург",
+        "rank_in_city": 3,
+        "client_id": "4771",
+        "purchase_volume": "419896.18",
+        "full_name": "Дмитрий Орлов"
+      },
+      {
+        "city": "Санкт-Петербург",
+        "rank_in_city": 4,
+        "client_id": "3751",
+        "purchase_volume": "419075.24",
+        "full_name": "Сергей Волков"
+      },
+      {
+        "city": "Санкт-Петербург",
+        "rank_in_city": 5,
+        "client_id": "640",
+        "purchase_volume": "402043.96",
+        "full_name": "Михаил Новиков"
+      },
+      {
+        "city": "Сочи",
+        "rank_in_city": 1,
+        "client_id": "394",
+        "purchase_volume": "265794.49",
+        "full_name": "Мария Смирнов"
+      },
+      {
+        "city": "Сочи",
+        "rank_in_city": 2,
+        "client_id": "494",
+        "purchase_volume": "237891.78",
+        "full_name": "Татьяна Смирнов"
+      },
+      {
+        "city": "Сочи",
+        "rank_in_city": 3,
+        "client_id": "232",
+        "purchase_volume": "232226.58",
+        "full_name": "Алексей Иванов"
+      },
+      {
+        "city": "Сочи",
+        "rank_in_city": 4,
+        "client_id": "290",
+        "purchase_volume": "216748.63",
+        "full_name": "Иван Морозов"
+      },
+      {
+        "city": "Сочи",
+        "rank_in_city": 5,
+        "client_id": "329",
+        "purchase_volume": "215858.26",
+        "full_name": "Андрей Морозов"
+      }
+    ],
+    "daily_purchases": [
+      {
+        "dt": "2026-01-31",
+        "tx_count": "51469",
+        "purchase_volume": "1288142925.17"
+      }
+    ]
+  }
+}

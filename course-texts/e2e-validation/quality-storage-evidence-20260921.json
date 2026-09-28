@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-09-26T20:44:28.058372+00:00",
+  "passed": true,
+  "notebook_sha256": "a6d81906166f8261fadcf76b0e969017415b7cc68bf7fc1998bdef10db6e35e3",
+  "course_checks_sha256": "b8d4bd79ed81901224ed7ca3930e17009f8f155dbee709a8c56c13077f7cd008",
+  "executed_notebook_sha256": "a17d45123aa697f6345d52289aaa4f9cb7d66d4dbb449ec22671663e89dc55c5",
+  "full_notebook_source_matches": true,
+  "full_notebook_status": {
+    "notebook": "02_silver.ipynb",
+    "passed": true,
+    "seconds": 227.56
+  },
+  "spark_version": "3.5.3",
+  "notebook_execution_date": "2026-09-21",
+  "independent_readback_at_utc": "2026-09-26T20:41:05.741848+00:00",
+  "storage_checks": {
+    "accepted_keys_unique": true,
+    "accepted_keys_nonnull": true,
+    "accepted_diagnostic_columns_absent": true,
+    "clients_accepted_schema_unchanged": true,
+    "clients_new_delta_version": true,
+    "clients_overwrite_committed": true,
+    "accounts_accepted_schema_unchanged": true,
+    "accounts_new_delta_version": true,
+    "accounts_overwrite_committed": true,
+    "transactions_accepted_schema_unchanged": true,
+    "transactions_new_delta_version": true,
+    "transactions_overwrite_committed": true,
+    "clients_quarantine_raw_columns_present": true,
+    "clients_quarantine_counts_and_reasons_unchanged": true,
+    "clients_quarantine_new_delta_version": true,
+    "accounts_quarantine_raw_columns_present": true,
+    "accounts_quarantine_counts_and_reasons_unchanged": true,
+    "accounts_quarantine_new_delta_version": true,
+    "transactions_quarantine_raw_columns_present": true,
+    "transactions_quarantine_counts_and_reasons_unchanged": true,
+    "transactions_quarantine_new_delta_version": true,
+    "scd2_delta_version_unchanged": true,
+    "malformed_json_empty": true
+  },
+  "comparison_checks_passed": 20,
+  "scope": "Current notebook 02 only, original demo-001 batch and persisted Bronze. MinIO/Delta writes and readback. Notebooks 00, 01, 03, 04, 05 and Metabase not rerun. Historical SCD2, Gold and ClickHouse read and compared only. Not a fresh-environment test.",
+  "files": {
+    "quality-before-20260921.json": "4c194bee30c3a1eee82b7484672be213dbf521425a11d1b17f35c989a57b25e0",
+    "quality-after-20260921.json": "4c194bee30c3a1eee82b7484672be213dbf521425a11d1b17f35c989a57b25e0",
+    "quality-comparison-20260921.json": "6eed03aeec817a0437395df03ba0f641d13f00c37a83bd2881f239f02f2d9a69",
+    "quality-storage-before-20260921.json": "7c65d4e31821d37c703ada8968bb4527ed9a0496b16c6746ebe29e16aea617e3",
+    "quality-storage-after-20260921.json": "a5facd4715869b8cc90ab224ca6f5522735f2d8b11adc0f60f1c9f22b3d01cd9",
+    "quality-silver-20260921-status.json": "42db666ee80899708099e86cc4b385cca9871fe70d0eedd25a39134f3515f329",
+    "quality-storage-detail-20260921.py": "f62fa2153bd933282fae2ae4cb9e0c368f3bdcec941790d66e576b21acf8a60f"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "volume": "e2e-stepik-validation_kafka-bootstrap-data",
+  "volume_preserved": true,
+  "container_changed": true,
+  "health": "healthy"
+}

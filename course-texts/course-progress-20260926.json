@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-26",
+  "saved_distinct_steps": 46,
+  "stepik_new_png": 3,
+  "local_diagrams": 7,
+  "cache_png_uploaded": false,
+  "previous_snapshot": {
+    "date": "2026-09-21",
+    "saved_distinct_steps": 43
+  },
+  "new_saved_steps": [
+    {
+      "lesson": 2382568,
+      "step": 1,
+      "module": "1.1",
+      "url": "https://stepik.org/lesson/2382568/step/1?unit=2417990",
+      "student_readback_verified": true,
+      "html": "introduction-step1.html",
+      "html_sha256": "4d7879f7c591b560d7ad1b6ddf5d134c5a431951c6142adff78a4831aaee9f95"
+    },
+    {
+      "lesson": 2383566,
+      "step": 1,
+      "module": "1.5",
+      "url": "https://stepik.org/lesson/2383566/step/1?unit=2418991",
+      "student_readback_verified": true,
+      "html": "faq-step1.html",
+      "html_sha256": "b6afd901f812ebfdfc8963fe3707de6f1787aa6e35a9b4a9c87ddc590ac2f125"
+    },
+    {
+      "lesson": 2383563,
+      "step": 1,
+      "module": "1.2",
+      "saved_date": "2026-09-20",
+      "url": "https://stepik.org/lesson/2383563/step/1?unit=2418988",
+      "student_readback_verified": true,
+      "html": "idea-step1.html",
+      "html_sha256": "569d54eea45d8e1aab8adcf16ae43e6263646547b21ddd1ba5018b3b2429266a",
+      "original_image_preserved": true
+    },
+    {
+      "lesson": 2383563,
+      "step": 2,
+      "module": "1.2",
+      "saved_date": "2026-09-20",
+      "url": "https://stepik.org/lesson/2383563/step/2?unit=2418988",
+      "student_readback_verified": true,
+      "artifact": "idea-step2.json",
+      "artifact_sha256": "e73ecedb0f5c2a4d0b9303751f441ceec61d6ba91c46275b861d0567d49b0df9",
+      "new_correct_attempt_verified": true,
+      "new_wrong_attempt_verified": true,
+      "feedback_after_wrong_attempt": "Correct-option feedback subsequently reworded to remove the misleading opening word; final correct attempt verified."
+    },
+    {
+      "lesson": 2383565,
+      "step": 1,
+      "module": "1.4",
+      "saved_date": "2026-09-26",
+      "url": "https://stepik.org/lesson/2383565/step/1?unit=2418990",
+      "student_readback_verified": true,
+      "artifact": "tutorial-step1.html",
+      "artifact_sha256": "82eaa75349d8779980cab22438b6ec5153714fcaa2c598a9109614f43b12d3c2"
+    },
+    {
+      "lesson": 2383565,
+      "step": 2,
+      "module": "1.4",
+      "saved_date": "2026-09-26",
+      "url": "https://stepik.org/lesson/2383565/step/2?unit=2418990",
+      "student_readback_verified": true,
+      "artifact": "tutorial-step2.html",
+      "artifact_sha256": "0d74190e8a0c8bc1a631d91d7e5da1b1c10e65039e03c88ffa7b17fb1e8414b1"
+    },
+    {
+      "lesson": 2383565,
+      "step": 3,
+      "module": "1.4",
+      "saved_date": "2026-09-26",
+      "url": "https://stepik.org/lesson/2383565/step/3?unit=2418990",
+      "student_readback_verified": true,
+      "artifact": "tutorial-step3.json",
+      "artifact_sha256": "ab3656888db7cf42ac3e33b54e525d92c6b2d87bcc3b5bf6d1892d573ee16995"
+    }
+  ],
+  "pending_draft": null,
+  "browser_status": "Editor available again on 2026-09-26. Tutorial steps 1, 2, 3 saved and read in student mode.",
+  "emulator": {
+    "version": "2026-05-21-conf-v7-review-patch-3",
+    "module_sha256": "1f5c1e3dca87b1f65c1e71024f1ab6119c38c313c687d492b73def8806b9bb9b",
+    "real_spark_cases_equal": 91,
+    "unittest_tests_passed": 14,
+    "private_cache_checker_normal_cases_passed": 14,
+    "public_attachment_replaced": false
+  },
+  "updated_at_utc": "2026-09-26T20:49:13.534207+00:00",
+  "money_validation": {
+    "date": "2026-09-20",
+    "inputs": 70,
+    "checks_passed": 214,
+    "full_notebook_02_passed": true,
+    "before_after_checks_passed": 20,
+    "notebook_sha256": "90d909a4bbf731429ad141f552c7757e24cbf82f19cdd61b442cc1f447daa2ea",
+    "stepik_texts_aligned": false
+  },
+  "silver_quality_validation": {
+    "date": "2026-09-21",
+    "inputs": 95,
+    "checks_passed": 278,
+    "money_regression_checks_passed": 214,
+    "notebook_sha256": "a6d81906166f8261fadcf76b0e969017415b7cc68bf7fc1998bdef10db6e35e3",
+    "full_storage_run_after_key_fix": true,
+    "stepik_texts_aligned": false,
+    "storage_checks_passed": 23,
+    "before_after_checks_passed": 20,
+    "storage_evidence": "e2e-validation/quality-storage-evidence-20260921.json"
+  },
+  "tutorial_validation": {
+    "steps_read": [
+      1,
+      2,
+      3
+    ],
+    "step2_new_correct_submission_verified": true,
+    "step3_new_correct_attempt_verified": true,
+    "step3_new_wrong_attempt_verified": true,
+    "original_image_preserved_and_loaded": true,
+    "new_png_uploaded": false,
+    "step2_template_and_checker_changed": false,
+    "scope": "One fresh accepted programming submission; new wrong and correct quiz attempts. Not a complete emulator/checker compatibility matrix."
+  }
+}

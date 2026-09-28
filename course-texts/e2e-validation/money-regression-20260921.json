@@ -1,0 +1,2409 @@
+{
+  "started_utc": "2026-09-21T13:39:19.641230+00:00",
+  "mode": "assert",
+  "notebook": "audit-work\\apache_spark_course\\notebooks\\02_silver.ipynb",
+  "passed": true,
+  "checks": [
+    {
+      "name": "expected_spark_version",
+      "passed": true
+    },
+    {
+      "name": "balance.full_clean_schema",
+      "passed": true
+    },
+    {
+      "name": "balance.decimal_type",
+      "passed": true
+    },
+    {
+      "name": "balance.raw_not_in_clean",
+      "passed": true
+    },
+    {
+      "name": "balance.raw_in_quarantine",
+      "passed": true
+    },
+    {
+      "name": "balance.partition_count",
+      "passed": true
+    },
+    {
+      "name": "balance.unique_partition",
+      "passed": true
+    },
+    {
+      "name": "balance.minimum_cent.1.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.minimum_cent.1.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_tenths.2.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_tenths.2.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_tenths.3.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_tenths.3.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.integer.4.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.integer.4.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.one_fraction_digit.5.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.one_fraction_digit.5.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.surrounding_ascii_spaces.6.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.surrounding_ascii_spaces.6.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.7.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.7.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.8.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.8.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.9.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.zero.9.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.negative.10.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.negative.10.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.negative.10.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.maximum.11.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.maximum.11.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "balance.overflow.12.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.overflow.12.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.overflow.12.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_overflow.13.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_overflow.13.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_overflow.13.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.14.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.14.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.14.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.15.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.15.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.subcent.15.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_half.16.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_half.16.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.rounding_half.16.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.excess_trailing_zeros.17.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.excess_trailing_zeros.17.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.excess_trailing_zeros.17.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.18.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.18.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.18.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.19.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.19.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.scientific.19.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.20.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.20.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.20.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.21.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.21.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.21.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.22.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.22.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.nonfinite.22.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.23.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.23.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.23.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.24.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.24.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.24.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.25.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.25.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.missing.25.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.26.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.26.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.26.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.27.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.27.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.27.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.28.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.28.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.non_ascii.28.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.plus_sign.29.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.plus_sign.29.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.plus_sign.29.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.comma.30.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.comma.30.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.comma.30.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.31.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.31.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.31.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.32.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.32.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.32.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.33.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.33.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.33.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.34.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.34.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.34.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.35.decision",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.35.reasons",
+      "passed": true
+    },
+    {
+      "name": "balance.invalid_decimal_shape.35.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_tenths_sum",
+      "passed": true
+    },
+    {
+      "name": "balance.exact_repeat",
+      "passed": true
+    },
+    {
+      "name": "balance.equivalent_notation_repeat",
+      "passed": true
+    },
+    {
+      "name": "balance.conflicting_accepted_values",
+      "passed": true
+    },
+    {
+      "name": "amount.full_clean_schema",
+      "passed": true
+    },
+    {
+      "name": "amount.decimal_type",
+      "passed": true
+    },
+    {
+      "name": "amount.raw_not_in_clean",
+      "passed": true
+    },
+    {
+      "name": "amount.raw_in_quarantine",
+      "passed": true
+    },
+    {
+      "name": "amount.partition_count",
+      "passed": true
+    },
+    {
+      "name": "amount.unique_partition",
+      "passed": true
+    },
+    {
+      "name": "amount.minimum_cent.1.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.minimum_cent.1.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_tenths.2.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_tenths.2.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_tenths.3.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_tenths.3.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.integer.4.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.integer.4.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.one_fraction_digit.5.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.one_fraction_digit.5.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.surrounding_ascii_spaces.6.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.surrounding_ascii_spaces.6.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.7.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.7.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.7.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.8.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.8.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.8.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.9.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.9.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.zero.9.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.negative.10.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.negative.10.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.negative.10.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.maximum.11.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.maximum.11.exact_decimal",
+      "passed": true
+    },
+    {
+      "name": "amount.overflow.12.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.overflow.12.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.overflow.12.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_overflow.13.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_overflow.13.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_overflow.13.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.14.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.14.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.14.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.15.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.15.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.subcent.15.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_half.16.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_half.16.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.rounding_half.16.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.excess_trailing_zeros.17.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.excess_trailing_zeros.17.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.excess_trailing_zeros.17.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.18.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.18.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.18.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.19.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.19.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.scientific.19.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.20.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.20.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.20.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.21.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.21.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.21.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.22.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.22.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.nonfinite.22.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.23.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.23.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.23.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.24.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.24.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.24.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.25.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.25.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.missing.25.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.26.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.26.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.26.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.27.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.27.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.27.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.28.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.28.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.non_ascii.28.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.plus_sign.29.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.plus_sign.29.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.plus_sign.29.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.comma.30.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.comma.30.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.comma.30.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.31.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.31.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.31.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.32.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.32.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.32.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.33.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.33.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.33.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.34.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.34.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.34.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.35.decision",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.35.reasons",
+      "passed": true
+    },
+    {
+      "name": "amount.invalid_decimal_shape.35.raw_preserved",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_tenths_sum",
+      "passed": true
+    },
+    {
+      "name": "amount.exact_repeat",
+      "passed": true
+    },
+    {
+      "name": "amount.equivalent_notation_repeat",
+      "passed": true
+    },
+    {
+      "name": "amount.conflicting_accepted_values",
+      "passed": true
+    }
+  ],
+  "fields": {
+    "balance": {
+      "scenario_groups": 20,
+      "case_count": 35,
+      "accepted_count": 10,
+      "rejected_count": 25,
+      "rule_names": [
+        "account_id",
+        "client_id",
+        "orphan_client",
+        "balance_format",
+        "balance",
+        "open_date",
+        "status",
+        "acc_type"
+      ],
+      "clean_schema": "struct<client_id:bigint,account_id:bigint,balance:decimal(18,2),open_date:date,status:string,acc_type:string,client_exists:boolean>",
+      "quarantine_schema": "struct<client_id:bigint,account_id:bigint,balance:decimal(18,2),open_date:date,status:string,acc_type:string,account_id_raw:string,client_id_raw:string,balance_raw:string,client_exists:boolean,reject_reason:string>",
+      "cases": [
+        {
+          "id": 1,
+          "scenario": "minimum_cent",
+          "raw": "0.01",
+          "expected_accept": true,
+          "expected_value": "0.01",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.01",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 2,
+          "scenario": "exact_tenths",
+          "raw": "0.10",
+          "expected_accept": true,
+          "expected_value": "0.10",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.10",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 3,
+          "scenario": "exact_tenths",
+          "raw": "0.20",
+          "expected_accept": true,
+          "expected_value": "0.20",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.20",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 4,
+          "scenario": "integer",
+          "raw": "1",
+          "expected_accept": true,
+          "expected_value": "1.00",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "1.00",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 5,
+          "scenario": "one_fraction_digit",
+          "raw": "1.2",
+          "expected_accept": true,
+          "expected_value": "1.20",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "1.20",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 6,
+          "scenario": "surrounding_ascii_spaces",
+          "raw": "  12.34  ",
+          "expected_accept": true,
+          "expected_value": "12.34",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "12.34",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 7,
+          "scenario": "zero",
+          "raw": "0",
+          "expected_accept": true,
+          "expected_value": "0.00",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.00",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 8,
+          "scenario": "zero",
+          "raw": "0.00",
+          "expected_accept": true,
+          "expected_value": "0.00",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.00",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 9,
+          "scenario": "zero",
+          "raw": "-0.00",
+          "expected_accept": true,
+          "expected_value": "0.00",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.00",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 10,
+          "scenario": "negative",
+          "raw": "-1",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance"
+          ],
+          "allowed_reasons": [
+            "balance"
+          ],
+          "actual_accept": false,
+          "actual_value": "-1.00",
+          "actual_reasons": [
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-1"
+        },
+        {
+          "id": 11,
+          "scenario": "maximum",
+          "raw": "9999999999999999.99",
+          "expected_accept": true,
+          "expected_value": "9999999999999999.99",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "9999999999999999.99",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 12,
+          "scenario": "overflow",
+          "raw": "10000000000000000.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance"
+          ],
+          "allowed_reasons": [
+            "balance"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "10000000000000000.00"
+        },
+        {
+          "id": 13,
+          "scenario": "rounding_overflow",
+          "raw": "9999999999999999.995",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "9999999999999999.995"
+        },
+        {
+          "id": 14,
+          "scenario": "subcent",
+          "raw": "0.004",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "0.004"
+        },
+        {
+          "id": 15,
+          "scenario": "subcent",
+          "raw": "-0.004",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-0.004"
+        },
+        {
+          "id": 16,
+          "scenario": "rounding_half",
+          "raw": "1.005",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.005"
+        },
+        {
+          "id": 17,
+          "scenario": "excess_trailing_zeros",
+          "raw": "1.2300",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.2300"
+        },
+        {
+          "id": 18,
+          "scenario": "scientific",
+          "raw": "1e2",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1e2"
+        },
+        {
+          "id": 19,
+          "scenario": "scientific",
+          "raw": "1e-3",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1e-3"
+        },
+        {
+          "id": 20,
+          "scenario": "nonfinite",
+          "raw": "NaN",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "NaN"
+        },
+        {
+          "id": 21,
+          "scenario": "nonfinite",
+          "raw": "Infinity",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "Infinity"
+        },
+        {
+          "id": 22,
+          "scenario": "nonfinite",
+          "raw": "-Infinity",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-Infinity"
+        },
+        {
+          "id": 23,
+          "scenario": "missing",
+          "raw": null,
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": null
+        },
+        {
+          "id": 24,
+          "scenario": "missing",
+          "raw": "",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": ""
+        },
+        {
+          "id": 25,
+          "scenario": "missing",
+          "raw": "   ",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "   "
+        },
+        {
+          "id": 26,
+          "scenario": "non_ascii",
+          "raw": "１２.３４",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "１２.３４"
+        },
+        {
+          "id": 27,
+          "scenario": "non_ascii",
+          "raw": "١٢.٣٤",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "١٢.٣٤"
+        },
+        {
+          "id": 28,
+          "scenario": "non_ascii",
+          "raw": " 12.34 ",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": " 12.34 "
+        },
+        {
+          "id": 29,
+          "scenario": "plus_sign",
+          "raw": "+1.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "+1.00"
+        },
+        {
+          "id": 30,
+          "scenario": "comma",
+          "raw": "1,23",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1,23"
+        },
+        {
+          "id": 31,
+          "scenario": "invalid_decimal_shape",
+          "raw": ".50",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": ".50"
+        },
+        {
+          "id": 32,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1."
+        },
+        {
+          "id": 33,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1 2.34",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1 2.34"
+        },
+        {
+          "id": 34,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.00\t",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.00\t"
+        },
+        {
+          "id": 35,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.00\n",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "balance_format"
+          ],
+          "allowed_reasons": [
+            "balance",
+            "balance_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "balance_format",
+            "balance"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.00\n"
+        }
+      ],
+      "exact_tenths_sum": "0.30",
+      "exact_repeat": {
+        "input": [
+          "1.00",
+          "1.00"
+        ],
+        "clean_count": 1,
+        "passed": true
+      },
+      "equivalent_notation_repeat": {
+        "input": [
+          "1",
+          "1.00"
+        ],
+        "clean_count": 1,
+        "passed": true
+      },
+      "conflicting_accepted_values": {
+        "input": [
+          "1.00",
+          "2.00"
+        ],
+        "same_business_id": true,
+        "assertion_rejected": true
+      }
+    },
+    "amount": {
+      "scenario_groups": 20,
+      "case_count": 35,
+      "accepted_count": 7,
+      "rejected_count": 28,
+      "rule_names": [
+        "tx_id",
+        "account_id",
+        "orphan_account",
+        "amount_format",
+        "amount",
+        "currency",
+        "ts",
+        "status",
+        "tx_type"
+      ],
+      "clean_schema": "struct<account_id:bigint,tx_id:string,batch_id:string,amount:decimal(18,2),currency:string,tx_type:string,merchant:string,status:string,ts:timestamp,account_exists:boolean>",
+      "quarantine_schema": "struct<account_id:bigint,tx_id:string,batch_id:string,amount:decimal(18,2),currency:string,tx_type:string,merchant:string,status:string,ts:timestamp,amount_raw:string,account_exists:boolean,reject_reason:string>",
+      "cases": [
+        {
+          "id": 1,
+          "scenario": "minimum_cent",
+          "raw": "0.01",
+          "expected_accept": true,
+          "expected_value": "0.01",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.01",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 2,
+          "scenario": "exact_tenths",
+          "raw": "0.10",
+          "expected_accept": true,
+          "expected_value": "0.10",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.10",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 3,
+          "scenario": "exact_tenths",
+          "raw": "0.20",
+          "expected_accept": true,
+          "expected_value": "0.20",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "0.20",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 4,
+          "scenario": "integer",
+          "raw": "1",
+          "expected_accept": true,
+          "expected_value": "1.00",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "1.00",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 5,
+          "scenario": "one_fraction_digit",
+          "raw": "1.2",
+          "expected_accept": true,
+          "expected_value": "1.20",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "1.20",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 6,
+          "scenario": "surrounding_ascii_spaces",
+          "raw": "  12.34  ",
+          "expected_accept": true,
+          "expected_value": "12.34",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "12.34",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 7,
+          "scenario": "zero",
+          "raw": "0",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount"
+          ],
+          "allowed_reasons": [
+            "amount"
+          ],
+          "actual_accept": false,
+          "actual_value": "0.00",
+          "actual_reasons": [
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "0"
+        },
+        {
+          "id": 8,
+          "scenario": "zero",
+          "raw": "0.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount"
+          ],
+          "allowed_reasons": [
+            "amount"
+          ],
+          "actual_accept": false,
+          "actual_value": "0.00",
+          "actual_reasons": [
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "0.00"
+        },
+        {
+          "id": 9,
+          "scenario": "zero",
+          "raw": "-0.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount"
+          ],
+          "allowed_reasons": [
+            "amount"
+          ],
+          "actual_accept": false,
+          "actual_value": "0.00",
+          "actual_reasons": [
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-0.00"
+        },
+        {
+          "id": 10,
+          "scenario": "negative",
+          "raw": "-1",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount"
+          ],
+          "allowed_reasons": [
+            "amount"
+          ],
+          "actual_accept": false,
+          "actual_value": "-1.00",
+          "actual_reasons": [
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-1"
+        },
+        {
+          "id": 11,
+          "scenario": "maximum",
+          "raw": "9999999999999999.99",
+          "expected_accept": true,
+          "expected_value": "9999999999999999.99",
+          "required_reasons": [],
+          "allowed_reasons": [],
+          "actual_accept": true,
+          "actual_value": "9999999999999999.99",
+          "actual_reasons": [],
+          "raw_column_present": false,
+          "actual_raw": null
+        },
+        {
+          "id": 12,
+          "scenario": "overflow",
+          "raw": "10000000000000000.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount"
+          ],
+          "allowed_reasons": [
+            "amount"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "10000000000000000.00"
+        },
+        {
+          "id": 13,
+          "scenario": "rounding_overflow",
+          "raw": "9999999999999999.995",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "9999999999999999.995"
+        },
+        {
+          "id": 14,
+          "scenario": "subcent",
+          "raw": "0.004",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "0.004"
+        },
+        {
+          "id": 15,
+          "scenario": "subcent",
+          "raw": "-0.004",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-0.004"
+        },
+        {
+          "id": 16,
+          "scenario": "rounding_half",
+          "raw": "1.005",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.005"
+        },
+        {
+          "id": 17,
+          "scenario": "excess_trailing_zeros",
+          "raw": "1.2300",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.2300"
+        },
+        {
+          "id": 18,
+          "scenario": "scientific",
+          "raw": "1e2",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1e2"
+        },
+        {
+          "id": 19,
+          "scenario": "scientific",
+          "raw": "1e-3",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1e-3"
+        },
+        {
+          "id": 20,
+          "scenario": "nonfinite",
+          "raw": "NaN",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "NaN"
+        },
+        {
+          "id": 21,
+          "scenario": "nonfinite",
+          "raw": "Infinity",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "Infinity"
+        },
+        {
+          "id": 22,
+          "scenario": "nonfinite",
+          "raw": "-Infinity",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "-Infinity"
+        },
+        {
+          "id": 23,
+          "scenario": "missing",
+          "raw": null,
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": null
+        },
+        {
+          "id": 24,
+          "scenario": "missing",
+          "raw": "",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": ""
+        },
+        {
+          "id": 25,
+          "scenario": "missing",
+          "raw": "   ",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "   "
+        },
+        {
+          "id": 26,
+          "scenario": "non_ascii",
+          "raw": "１２.３４",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "１２.３４"
+        },
+        {
+          "id": 27,
+          "scenario": "non_ascii",
+          "raw": "١٢.٣٤",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "١٢.٣٤"
+        },
+        {
+          "id": 28,
+          "scenario": "non_ascii",
+          "raw": " 12.34 ",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": " 12.34 "
+        },
+        {
+          "id": 29,
+          "scenario": "plus_sign",
+          "raw": "+1.00",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "+1.00"
+        },
+        {
+          "id": 30,
+          "scenario": "comma",
+          "raw": "1,23",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1,23"
+        },
+        {
+          "id": 31,
+          "scenario": "invalid_decimal_shape",
+          "raw": ".50",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": ".50"
+        },
+        {
+          "id": 32,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1."
+        },
+        {
+          "id": 33,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1 2.34",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1 2.34"
+        },
+        {
+          "id": 34,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.00\t",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.00\t"
+        },
+        {
+          "id": 35,
+          "scenario": "invalid_decimal_shape",
+          "raw": "1.00\n",
+          "expected_accept": false,
+          "expected_value": null,
+          "required_reasons": [
+            "amount_format"
+          ],
+          "allowed_reasons": [
+            "amount",
+            "amount_format"
+          ],
+          "actual_accept": false,
+          "actual_value": null,
+          "actual_reasons": [
+            "amount_format",
+            "amount"
+          ],
+          "raw_column_present": true,
+          "actual_raw": "1.00\n"
+        }
+      ],
+      "exact_tenths_sum": "0.30",
+      "exact_repeat": {
+        "input": [
+          "1.00",
+          "1.00"
+        ],
+        "clean_count": 1,
+        "passed": true
+      },
+      "equivalent_notation_repeat": {
+        "input": [
+          "1",
+          "1.00"
+        ],
+        "clean_count": 1,
+        "passed": true
+      },
+      "conflicting_accepted_values": {
+        "input": [
+          "1.00",
+          "2.00"
+        ],
+        "same_business_id": true,
+        "assertion_rejected": true
+      }
+    }
+  },
+  "runner_sha256": "2130f270ab1ab9111bafc8d9d7d473086d4e6f4d1fddb9add0cceec7a984c255",
+  "scope": {
+    "engine": "Real Spark expressions, JSON parsing, joins, casts, quality_split and checked_dedup",
+    "executed_source": "Assignments in notebook cells 6 and 8; save_clean and optional MONEY_PATTERN from cell 2",
+    "boundaries": [
+      "read_csv returns an explicit-schema fixture DataFrame",
+      "spark.read.parquet returns a fixture DataFrame containing UTF-8 JSON bytes in value",
+      "save_clean is extracted from the notebook; only storage writes and print/show are omitted",
+      "A read-only capture is inserted before save_clean returns",
+      "BATCH_ID is set to demo-001; notebook setup I/O functions and its BATCH_ID assignment are not run",
+      "Malformed JSON assignment runs, but its write/print and transaction printSchema do not"
+    ],
+    "not_covered": "CSV parser, Kafka, S3/MinIO, Delta publication and malformed JSON quarantine persistence"
+  },
+  "notebook_sha256": "a6d81906166f8261fadcf76b0e969017415b7cc68bf7fc1998bdef10db6e35e3",
+  "extraction": {
+    "money_pattern_present": true,
+    "executed_ast_sha256": {
+      "setup": "a6afe1d4406a7432b05ee53b1f1fa0ac348528bcc1f11df69e523e5955636764",
+      "cell_6": "b1bff351f3e1a516bcd94ba729ca222dc0eca6e7f641446e3b6b9f890f9d9829",
+      "cell_8": "890c4f8c7447948c4626d4cc9671cc3ffd6b100b8ef60a7de6ec58a309523004"
+    },
+    "omitted_statements": [
+      {
+        "cell": 2,
+        "statement": "bad.write.format('delta').option('overwriteSchema', 'true').mode('overwrite').save(f's3a://silver/v2/quarantine/{name}')"
+      },
+      {
+        "cell": 2,
+        "statement": "clean.write.format('delta').mode('overwrite').save(f's3a://silver/v2/{name}')"
+      },
+      {
+        "cell": 2,
+        "statement": "print(f'{name}: вход={n_raw}, отклонено={n_bad}, точных повторов={n_good - n_clean}, принято={n_clean}')"
+      },
+      {
+        "cell": 2,
+        "statement": "bad.groupBy('reject_reason').count().show(truncate=False)"
+      },
+      {
+        "cell": 8,
+        "statement": "malformed.write.format('delta').mode('overwrite').save('s3a://silver/v2/quarantine/malformed_json')"
+      },
+      {
+        "cell": 8,
+        "statement": "print('Сообщений без распознаваемого batch:', malformed.count())"
+      },
+      {
+        "cell": 8,
+        "statement": "tx_clean.printSchema()"
+      }
+    ]
+  },
+  "spark_version": "3.5.3",
+  "money_pattern": "\\A-?[0-9]+(?:\\.[0-9]{1,2})?\\z",
+  "finished_utc": "2026-09-21T13:39:54.881570+00:00",
+  "mismatches": [],
+  "fixture_adapter": {
+    "kind": "JVM literal expressions over spark.range; actual business transformations unchanged",
+    "adapter_sha256": "fab4e0e0054692e213162580c7f7d8e87b7c3b3c2b1a928a51b9f08de268db02",
+    "fixture_helper_sha256": "3c38a12591efd4b3343ebeed6d803a67b45214a57b580349eed776018e248ac6"
+  }
+}

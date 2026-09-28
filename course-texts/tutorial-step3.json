@@ -1,0 +1,27 @@
+{
+  "question_html": "<p>Задание просит вывести только количество строк в <code>df</code>. Вы уже выполнили:</p><pre><code class=\"language-python\">result = df.count()</code></pre><p>Какой строкой нужно вывести полученное число?</p>",
+  "options": [
+    {
+      "text": "<code>result.show()</code>",
+      "correct": false,
+      "feedback": "count() возвращает число. Метод show() предназначен для DataFrame."
+    },
+    {
+      "text": "<code>print(df)</code>",
+      "correct": false,
+      "feedback": "Так выводится представление DataFrame, а не вычисленное количество строк."
+    },
+    {
+      "text": "<code>print(result)</code>",
+      "correct": true,
+      "feedback": "В result сохранено число строк; print(result) выводит это число. Имя переменной в примере не является обязательным требованием Spark."
+    },
+    {
+      "text": "<code>print(\"result\")</code>",
+      "correct": false,
+      "feedback": "Кавычки превращают result в буквальный текст. Значение переменной так не выводится."
+    }
+  ],
+  "correct_feedback": "count() вернул число, и print(result) вывел его. Выбирайте способ вывода по типу результата и условию задания.",
+  "wrong_feedback": "Проверьте тип result: после count() это число, а не DataFrame и не текст в кавычках."
+}

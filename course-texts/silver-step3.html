@@ -1,0 +1,38 @@
+<h2>Код: Bronze → Silver</h2><p>Работаем в <code>02_silver.ipynb</code> на настоящем Spark 3.5.3, Delta 3.3.0, UTC. Выполните предыдущие ячейки этого notebook: они задают <code>BATCH_ID</code>, правила формата, функции проверки и очищают клиентов и счета. Фрагмент ниже — ячейка операций из того же notebook, не отдельная программа.</p><h2>Сначала проверяем исходное значение, затем меняем тип</h2>
+<p>В этой лабораторной формат источника задан заранее. Денежные поля <code>amount</code> и <code>balance</code> приходят как текст: принимаем обычную десятичную запись с точкой и не более чем двумя знаками после неё, например <code>12</code>, <code>12.3</code>, <code>12.30</code>. Обычные пробелы по краям допускаются. Запятая, экспонента и знак <code>+</code> в формат этого источника не входят.</p>
+<p>Одного <code>cast</code> недостаточно: он может изменить значение. Поэтому готовый код сначала проверяет формат, затем возможность представить сумму как <code>Decimal(18,2)</code> и бизнес-правило: сумма операции положительна, баланс неотрицателен. Все суммы набора — в RUB; запрет отрицательного баланса относится именно к нашей лабораторной.</p>
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%">
+<thead><tr><th>Исходная запись</th><th>Решение Silver</th><th>Почему</th></tr></thead>
+<tbody>
+<tr><td>Сумма <code>12.30</code></td><td>Принять</td><td>Формат и бизнес-правило соблюдены</td></tr>
+<tr><td>Баланс <code>0.00</code></td><td>Принять</td><td>Нулевой баланс разрешён; для суммы операции ноль запрещён</td></tr>
+<tr><td>Сумма <code>1.005</code></td><td>Отклонить</td><td>Дробная копейка; при приёмке не округляем</td></tr>
+<tr><td>CSV-ID <code>101.5</code></td><td>Отклонить</td><td>Нельзя превратить его в другой ключ <code>101</code></td></tr>
+</tbody>
+</table>
+<p>Для CSV-полей <code>client_id</code> и <code>account_id</code> принимаем положительные целые ID: цифры <code>0–9</code>, обычные пробелы по краям допустимы, значение должно помещаться в <code>LongType</code>. Отдельно проверяем связи: счёт должен ссылаться на принятого клиента, а операция — на принятый счёт.</p>
+<p>У отклонённой строки сохраняем причину и исходный текст в диагностических колонках <code>amount_raw</code>, <code>balance_raw</code>, <code>client_id_raw</code> или <code>account_id_raw</code> — в зависимости от таблицы. Так можно объяснить отказ. В принятом Silver эти колонки не нужны. Правила формата уже даны в notebook: для прохождения урока самостоятельно писать регулярные выражения не требуется.</p>
+<h3>Операции: от исходного Kafka-сообщения до принятой записи</h3><p>Bronze хранит исходный <code>value</code> вместе с Kafka metadata в <code>s3a://bronze/transactions_raw_v2</code>. Парсим JSON, выбираем batch, типизируем и проверяем ссылку на принятый счёт.</p><pre><code class="language-python">schema = &quot;tx_id STRING, batch_id STRING, account_id BIGINT, amount STRING, currency STRING, tx_type STRING, merchant STRING, status STRING, ts STRING&quot;
+raw = spark.read.parquet(&quot;s3a://bronze/transactions_raw_v2&quot;)
+parsed = raw.withColumn(&quot;d&quot;, F.from_json(F.col(&quot;value&quot;).cast(&quot;string&quot;), schema))
+malformed = parsed.filter(&quot;d IS NULL OR d.batch_id IS NULL&quot;)
+malformed.write.format(&quot;delta&quot;).mode(&quot;overwrite&quot;).save(&quot;s3a://silver/v2/quarantine/malformed_json&quot;)
+print(&quot;Сообщений без распознаваемого batch:&quot;, malformed.count())
+tx = parsed.select(&quot;d.*&quot;).filter(F.col(&quot;batch_id&quot;) == BATCH_ID)
+tx = (tx.withColumn(&quot;amount_raw&quot;, F.col(&quot;amount&quot;))
+      .withColumn(&quot;amount&quot;, F.when(F.trim(&quot;amount_raw&quot;).rlike(MONEY_PATTERN),
+                                   F.col(&quot;amount_raw&quot;).cast(&quot;decimal(18,2)&quot;)))
+      .withColumn(&quot;ts&quot;, F.to_timestamp(&quot;ts&quot;))
+      .join(accounts_clean.select(&quot;account_id&quot;).withColumn(&quot;account_exists&quot;, F.lit(True)), &quot;account_id&quot;, &quot;left&quot;))
+tx_clean = save_clean(&quot;transactions&quot;, tx, {
+    &quot;tx_id&quot;: F.col(&quot;tx_id&quot;).rlike(r&quot;\S&quot;),
+    &quot;account_id&quot;: F.col(&quot;account_id&quot;) &gt; 0,
+    &quot;orphan_account&quot;: F.col(&quot;account_exists&quot;) == True,
+    &quot;amount_format&quot;: F.trim(&quot;amount_raw&quot;).rlike(MONEY_PATTERN),
+    &quot;amount&quot;: F.col(&quot;amount&quot;) &gt; 0,
+    &quot;currency&quot;: F.col(&quot;currency&quot;) == &quot;RUB&quot;,
+    &quot;ts&quot;: F.col(&quot;ts&quot;).isNotNull(),
+    &quot;status&quot;: F.col(&quot;status&quot;).isin(&quot;completed&quot;, &quot;pending&quot;, &quot;failed&quot;),
+    &quot;tx_type&quot;: F.col(&quot;tx_type&quot;).isin(&quot;purchase&quot;, &quot;withdrawal&quot;, &quot;transfer&quot;, &quot;refund&quot;),
+}, &quot;tx_id&quot;)
+tx_clean.printSchema()</code></pre><h3>Что делает готовая save_clean</h3><p>Разделяет строки на принятые и отклонённые; у отклонённых сохраняет <code>reject_reason</code> и исходные значения. Затем убирает точные повторы и проверяет уникальность ключа. Разные записи с одним ID — конфликт, а не повод произвольно оставить одну через <code>dropDuplicates(["tx_id"])</code>.</p><p>Результат: <code>s3a://silver/v2/transactions</code>; отклонённые операции: <code>s3a://silver/v2/quarantine/transactions</code>. Эти таблицы пересчитываются для выбранного batch. Ошибки JSON и записи без batch сохраняются отдельно; историю SCD2 этот notebook не перезаписывает.</p>

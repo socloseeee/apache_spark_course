@@ -1,0 +1,3 @@
+Предыдущая версия сохранена: publication_case_staging_f2c25ef390a1
+publication_case 2 строк опубликовано; контрольные итоги: (Decimal('35.25'), 3)
+{"passed": true, "checks_passed": 11, "checks_total": 11, "failure_phase": null, "failure_type": null, "cleanup": {"temporary_database_removed": true, "temporary_bucket_removed": true}}

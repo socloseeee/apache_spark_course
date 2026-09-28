@@ -1,0 +1,76 @@
+Python 3.11.10
+openjdk version "17.0.12" 2024-07-16
+OpenJDK Runtime Environment (build 17.0.12+7-Ubuntu-1ubuntu224.04)
+OpenJDK 64-Bit Server VM (build 17.0.12+7-Ubuntu-1ubuntu224.04, mixed mode, sharing)
+Collecting pyspark==3.5.3 (from -r /course/notebooks/requirements.txt (line 1))
+  Downloading pyspark-3.5.3.tar.gz (317.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.3/317.3 MB 8.8 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting delta-spark==3.3.0 (from -r /course/notebooks/requirements.txt (line 2))
+  Downloading delta_spark-3.3.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting kafka-python==2.0.2 (from -r /course/notebooks/requirements.txt (line 3))
+  Downloading kafka_python-2.0.2-py2.py3-none-any.whl.metadata (7.8 kB)
+Requirement already satisfied: requests==2.32.3 in /opt/conda/lib/python3.11/site-packages (from -r /course/notebooks/requirements.txt (line 4)) (2.32.3)
+Collecting boto3==1.35.54 (from -r /course/notebooks/requirements.txt (line 5))
+  Downloading boto3-1.35.54-py3-none-any.whl.metadata (6.7 kB)
+Collecting pytest==8.3.3 (from -r /course/notebooks/requirements.txt (line 6))
+  Downloading pytest-8.3.3-py3-none-any.whl.metadata (7.5 kB)
+Collecting py4j==0.10.9.7 (from pyspark==3.5.3->-r /course/notebooks/requirements.txt (line 1))
+  Downloading py4j-0.10.9.7-py2.py3-none-any.whl.metadata (1.5 kB)
+Requirement already satisfied: importlib-metadata>=1.0.0 in /opt/conda/lib/python3.11/site-packages (from delta-spark==3.3.0->-r /course/notebooks/requirements.txt (line 2)) (8.5.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/conda/lib/python3.11/site-packages (from requests==2.32.3->-r /course/notebooks/requirements.txt (line 4)) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in /opt/conda/lib/python3.11/site-packages (from requests==2.32.3->-r /course/notebooks/requirements.txt (line 4)) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/conda/lib/python3.11/site-packages (from requests==2.32.3->-r /course/notebooks/requirements.txt (line 4)) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/lib/python3.11/site-packages (from requests==2.32.3->-r /course/notebooks/requirements.txt (line 4)) (2024.8.30)
+Collecting botocore<1.36.0,>=1.35.54 (from boto3==1.35.54->-r /course/notebooks/requirements.txt (line 5))
+  Downloading botocore-1.35.99-py3-none-any.whl.metadata (5.7 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3==1.35.54->-r /course/notebooks/requirements.txt (line 5))
+  Downloading jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.11.0,>=0.10.0 (from boto3==1.35.54->-r /course/notebooks/requirements.txt (line 5))
+  Downloading s3transfer-0.10.4-py3-none-any.whl.metadata (1.7 kB)
+Collecting iniconfig (from pytest==8.3.3->-r /course/notebooks/requirements.txt (line 6))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Requirement already satisfied: packaging in /opt/conda/lib/python3.11/site-packages (from pytest==8.3.3->-r /course/notebooks/requirements.txt (line 6)) (24.1)
+Requirement already satisfied: pluggy<2,>=1.5 in /opt/conda/lib/python3.11/site-packages (from pytest==8.3.3->-r /course/notebooks/requirements.txt (line 6)) (1.5.0)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /opt/conda/lib/python3.11/site-packages (from botocore<1.36.0,>=1.35.54->boto3==1.35.54->-r /course/notebooks/requirements.txt (line 5)) (2.9.0)
+Requirement already satisfied: zipp>=3.20 in /opt/conda/lib/python3.11/site-packages (from importlib-metadata>=1.0.0->delta-spark==3.3.0->-r /course/notebooks/requirements.txt (line 2)) (3.20.2)
+Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.11/site-packages (from python-dateutil<3.0.0,>=2.1->botocore<1.36.0,>=1.35.54->boto3==1.35.54->-r /course/notebooks/requirements.txt (line 5)) (1.16.0)
+Downloading delta_spark-3.3.0-py3-none-any.whl (21 kB)
+Downloading kafka_python-2.0.2-py2.py3-none-any.whl (246 kB)
+Downloading boto3-1.35.54-py3-none-any.whl (139 kB)
+Downloading pytest-8.3.3-py3-none-any.whl (342 kB)
+Downloading py4j-0.10.9.7-py2.py3-none-any.whl (200 kB)
+Downloading botocore-1.35.99-py3-none-any.whl (13.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 7.7 MB/s eta 0:00:00
+Downloading jmespath-1.1.0-py3-none-any.whl (20 kB)
+Downloading s3transfer-0.10.4-py3-none-any.whl (83 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Building wheels for collected packages: pyspark
+  Building wheel for pyspark (setup.py): started
+  Building wheel for pyspark (setup.py): finished with status 'done'
+  Created wheel for pyspark: filename=pyspark-3.5.3-py2.py3-none-any.whl size=317840625 sha256=9d1a97aa6268dfae33bf0c4647d42ae04ab91c93f2225ac2fa1faca176f0900f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-0nx9h0g3/wheels/97/f5/c0/947e2c0942b361ffe58651f36bd7f13772675b3863fd63d1b1
+Successfully built pyspark
+Installing collected packages: py4j, kafka-python, pyspark, jmespath, iniconfig, pytest, delta-spark, botocore, s3transfer, boto3
+Successfully installed boto3-1.35.54 botocore-1.35.99 delta-spark-3.3.0 iniconfig-2.3.0 jmespath-1.1.0 kafka-python-2.0.2 py4j-0.10.9.7 pyspark-3.5.3 pytest-8.3.3 s3transfer-0.10.4
+....                                                                     [100%]
+4 passed in 155.97s (0:02:35)
+........................                                                 [100%]
+24 passed in 145.15s (0:02:25)
+CONTAINER_EXIT_CODE=0
+
+VALIDATION_ENVIRONMENT
+Date: 2026-09-16
+Image tag: quay.io/jupyter/pyspark-notebook:spark-3.5.3
+RepoDigest: quay.io/jupyter/pyspark-notebook@sha256:6a4184ad094df225eedb1b6c7532fb9d294e9fa9f21fb4bcd5b2d9bbf0af0bd8
+Image ID: sha256:e0aa039c82718bc2397c217c8d0554ac8d741b654044d4b3e918345ed4e28aef
+Python: 3.11.10; Java: OpenJDK 17.0.12; PySpark: 3.5.3; Delta: 3.3.0; pytest: 8.3.3
+Container: codex-stepik-delta-validation-20260916; --rm; memory=3221225472; NanoCpus=2000000000
+Repository mount: /course, RW=false; no other host mounts or published ports
+Dependencies: /course/notebooks/requirements.txt, official https://pypi.org/simple; Delta JVM dependencies resolved by configure_spark_with_delta_pip
+Commands:
+python -m pytest /course/tests/test_spark_delta.py -q -ra --tb=short -p no:cacheprovider --basetemp=/tmp/delta-validation
+python -m pytest /course/tests -q -ra --tb=short -p no:cacheprovider --basetemp=/tmp/full-validation
+Results: Spark/Delta 4 passed, 0 failed, 0 skipped; full suite 24 passed, 0 failed, 0 skipped; container exit code 0
+Scope: true local Spark + Delta files and MERGE, synthetic fixture data; storage/publication tests use mocks; no full Compose pipeline or Metabase validation.

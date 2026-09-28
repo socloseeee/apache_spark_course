@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-20",
+  "passed": true,
+  "notebook_sha256": "90d909a4bbf731429ad141f552c7757e24cbf82f19cdd61b442cc1f447daa2ea",
+  "runner_sha256": "2130f270ab1ab9111bafc8d9d7d473086d4e6f4d1fddb9add0cceec7a984c255",
+  "full_notebook_source_matches": true,
+  "executed_notebook_sha256": "dde90ebef6742a921d2e7391feabbfce0323909242ac1a0ca8a25e3a3cfbb8c2",
+  "full_notebook_status": {
+    "notebook": "02_silver.ipynb",
+    "passed": true,
+    "seconds": 243.66
+  },
+  "matrix_checks": 214,
+  "money_fixture_inputs": 70,
+  "comparison_checks": 20,
+  "notebooks_03_to_05_rerun": false,
+  "files": {
+    "money-fixed-20260920.json": "f58a4c6aa26e69b9f66baff552a6e6091859ce304356cc70ea760ea9156bdf85",
+    "money-before-20260920.json": "4c194bee30c3a1eee82b7484672be213dbf521425a11d1b17f35c989a57b25e0",
+    "money-after-20260920.json": "4c194bee30c3a1eee82b7484672be213dbf521425a11d1b17f35c989a57b25e0",
+    "money-comparison-20260920.json": "6eed03aeec817a0437395df03ba0f641d13f00c37a83bd2881f239f02f2d9a69",
+    "money-silver-20260920-status.json": "651ddb31bb07e079172b3d1d24387d616cd7cda6614793ab4a288c778fae2bfc"
+  }
+}
