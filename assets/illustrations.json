@@ -1,0 +1,44 @@
+[
+  {
+    "file": "lazy-column.png",
+    "editable": "lazy-column.svg",
+    "alt": "Column, план и action",
+    "placement": "2.2/3.2 после объяснения выражений"
+  },
+  {
+    "file": "replay.png",
+    "editable": "replay.svg",
+    "alt": "Replay и новое событие",
+    "placement": "00 после определения batch"
+  },
+  {
+    "file": "bronze.png",
+    "editable": "bronze.svg",
+    "alt": "Исходное сырьё bronze",
+    "placement": "10.5 и notebook 01 перед ingestion"
+  },
+  {
+    "file": "scd2.png",
+    "editable": "scd2.svg",
+    "alt": "SCD2 и временная граница",
+    "placement": "11.2 перед MERGE; 04 перед join"
+  },
+  {
+    "file": "shuffle.png",
+    "editable": "shuffle.svg",
+    "alt": "Shuffle при группировке",
+    "placement": "8 перед обсуждением skew"
+  },
+  {
+    "file": "publish.png",
+    "editable": "publish.svg",
+    "alt": "Загрузка и публикация витрины",
+    "placement": "05 перед load_mart"
+  },
+  {
+    "file": "cache.png",
+    "editable": "cache.svg",
+    "alt": "Пометка, заполнение и повторное использование кэша DataFrame",
+    "placement": "8.5 / 1 после объяснения cache; подготовлено, пока не загружено на Stepik"
+  }
+]

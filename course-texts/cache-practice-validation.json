@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-18",
+  "spark_version": "3.5.3",
+  "passed": true,
+  "seconds": 30.2,
+  "code_cells_executed": 5,
+  "observed_fragments": [
+    "Пометка до action: True",
+    "Первый count: 5000",
+    "Повторный count: 5000",
+    "InMemoryTableScan",
+    "Пометка после unpersist: False"
+  ],
+  "spark_ui_visually_checked": false,
+  "timing_speedup_claimed": false,
+  "source_sha256": "89da24bb90a0512a91058c951a13ea763154f73afbfff37423457b5b1cfd38f5",
+  "executed_cells_match_source": true
+}

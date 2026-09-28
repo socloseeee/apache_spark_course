@@ -1,0 +1,778 @@
+{
+  "captured_at_utc": "2026-09-26T20:41:05.741848+00:00",
+  "spark_version": "3.5.3",
+  "tables": {
+    "clients": {
+      "count": 9523,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "full_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reg_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:33:11",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "9523",
+          "numOutputBytes": "77958",
+          "numFiles": "1"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "duplicate_keys": 0,
+      "null_keys": 0,
+      "diagnostic_raw_columns": []
+    },
+    "accounts": {
+      "count": 13542,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "account_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "acc_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "balance",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "open_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "client_exists",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:33:38",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "13542",
+          "numOutputBytes": "225156",
+          "numFiles": "1"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "duplicate_keys": 0,
+      "null_keys": 0,
+      "diagnostic_raw_columns": []
+    },
+    "transactions": {
+      "count": 171950,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "account_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tx_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "batch_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "amount",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tx_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "merchant",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ts",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "account_exists",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:35:41",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "171950",
+          "numOutputBytes": "3472080",
+          "numFiles": "3"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "duplicate_keys": 0,
+      "null_keys": 0,
+      "diagnostic_raw_columns": []
+    },
+    "clients_scd2": {
+      "count": 10008,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "full_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "valid_from",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "valid_to",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "is_current",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 6,
+        "timestamp": "2026-09-17 15:26:15",
+        "userId": null,
+        "userName": null,
+        "operation": "MERGE",
+        "operationParameters": {
+          "matchedPredicates": "[{\"predicate\":\"((NOT (full_name#1 <=> full_name#8101) OR NOT (city#4128 <=> city#8102)) OR NOT (segment#4133 <=> segment#8103))\",\"actionType\":\"update\"}]",
+          "predicate": "[\"((client_id#8100L = merge_key#9553L) AND is_current#8106)\"]",
+          "notMatchedBySourcePredicates": "[]",
+          "notMatchedPredicates": "[{\"actionType\":\"insert\"}]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 5,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "10008",
+          "numTargetBytesAdded": "61179",
+          "numTargetRowsInserted": "0",
+          "numTargetFilesAdded": "1",
+          "materializeSourceTimeMs": "2750",
+          "numTargetRowsMatchedDeleted": "0",
+          "numTargetFilesRemoved": "1",
+          "numTargetRowsMatchedUpdated": "0",
+          "executionTimeMs": "5817",
+          "numTargetDeletionVectorsUpdated": "0",
+          "numTargetRowsCopied": "10008",
+          "rewriteTimeMs": "1119",
+          "numTargetRowsUpdated": "0",
+          "numTargetDeletionVectorsRemoved": "0",
+          "numTargetRowsDeleted": "0",
+          "scanTimeMs": "1931",
+          "numSourceRows": "9038",
+          "numTargetDeletionVectorsAdded": "0",
+          "numTargetChangeFilesAdded": "0",
+          "numTargetRowsNotMatchedBySourceUpdated": "0",
+          "numTargetRowsNotMatchedBySourceDeleted": "0",
+          "numTargetBytesRemoved": "61179"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      }
+    },
+    "quarantine/clients": {
+      "count": 491,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "full_name",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "segment",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reg_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "client_id_raw",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reject_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:33:02",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "491",
+          "numOutputBytes": "8982",
+          "numFiles": "1"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "quarantine_by_reason": {
+        "city": 138,
+        "client_id": 177,
+        "reg_date": 176
+      }
+    },
+    "quarantine/accounts": {
+      "count": 1479,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "client_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "account_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "acc_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "balance",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "open_date",
+            "type": "date",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "account_id_raw",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "client_id_raw",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "balance_raw",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "client_exists",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reject_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:33:30",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "1479",
+          "numOutputBytes": "55093",
+          "numFiles": "1"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "quarantine_by_reason": {
+        "account_id": 259,
+        "account_id;orphan_client": 22,
+        "balance": 258,
+        "client_id;orphan_client": 256,
+        "orphan_client": 672,
+        "orphan_client;balance": 12
+      }
+    },
+    "quarantine/transactions": {
+      "count": 86358,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "account_id",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tx_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "batch_id",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "amount",
+            "type": "decimal(18,2)",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "tx_type",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "merchant",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "ts",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "amount_raw",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "account_exists",
+            "type": "boolean",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "reject_reason",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 4,
+        "timestamp": "2026-09-21 18:35:21",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": 3,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "86358",
+          "numOutputBytes": "2554314",
+          "numFiles": "3"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      },
+      "quarantine_by_reason": {
+        "account_id;orphan_account": 10485,
+        "amount": 9249,
+        "orphan_account": 55608,
+        "orphan_account;amount": 1092,
+        "tx_id": 8994,
+        "tx_id;orphan_account": 930
+      }
+    },
+    "quarantine/malformed_json": {
+      "count": 0,
+      "schema": {
+        "type": "struct",
+        "fields": [
+          {
+            "name": "key",
+            "type": "binary",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "value",
+            "type": "binary",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "topic",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "partition",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "offset",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "timestamp",
+            "type": "timestamp",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "timestampType",
+            "type": "integer",
+            "nullable": true,
+            "metadata": {}
+          },
+          {
+            "name": "d",
+            "type": {
+              "type": "struct",
+              "fields": [
+                {
+                  "name": "tx_id",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "batch_id",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "account_id",
+                  "type": "long",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "amount",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "currency",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "tx_type",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "merchant",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "status",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                },
+                {
+                  "name": "ts",
+                  "type": "string",
+                  "nullable": true,
+                  "metadata": {}
+                }
+              ]
+            },
+            "nullable": true,
+            "metadata": {}
+          }
+        ]
+      },
+      "latest_history": {
+        "version": 0,
+        "timestamp": "2026-09-17 07:19:01",
+        "userId": null,
+        "userName": null,
+        "operation": "WRITE",
+        "operationParameters": {
+          "mode": "Overwrite",
+          "partitionBy": "[]"
+        },
+        "job": null,
+        "notebook": null,
+        "clusterId": null,
+        "readVersion": null,
+        "isolationLevel": "Serializable",
+        "isBlindAppend": false,
+        "operationMetrics": {
+          "numOutputRows": "0",
+          "numOutputBytes": "1679",
+          "numFiles": "1"
+        },
+        "userMetadata": null,
+        "engineInfo": "Apache-Spark/3.5.3 Delta-Lake/3.3.0"
+      }
+    }
+  },
+  "checks": {
+    "accepted_keys_unique": true,
+    "accepted_keys_nonnull": true,
+    "accepted_diagnostic_columns_absent": true
+  }
+}

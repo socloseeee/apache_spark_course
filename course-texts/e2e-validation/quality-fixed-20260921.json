@@ -1,0 +1,4097 @@
+{
+  "started_utc": "2026-09-21T13:37:56.992262+00:00",
+  "passed": true,
+  "mode": "assert",
+  "checks": [
+    {
+      "name": "spark_version",
+      "passed": true
+    },
+    {
+      "name": "clients.partition",
+      "passed": true
+    },
+    {
+      "name": "clients.marker_coverage",
+      "passed": true
+    },
+    {
+      "name": "clients.raw_ids_not_in_clean",
+      "passed": true
+    },
+    {
+      "name": "clients.valid.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.valid.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.integer_spaces.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.integer_spaces.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.integer_spaces.client_id",
+      "passed": true
+    },
+    {
+      "name": "clients.leading_zeros.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.leading_zeros.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.leading_zeros.client_id",
+      "passed": true
+    },
+    {
+      "name": "clients.fractional_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.fractional_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.fractional_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.decimal_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.decimal_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.decimal_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.exponent_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.exponent_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.exponent_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.plus_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.plus_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.plus_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.zero_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.zero_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.zero_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.negative_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.negative_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.negative_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.overflow_id.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.overflow_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.overflow_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.leap_date.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.leap_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_leap_date.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_leap_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_leap_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_month.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_month.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.invalid_month.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_date.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.missing_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_date.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.empty_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.city_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.city_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.city_missing.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.city_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.city_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.city_empty.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.city_spaces.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.city_spaces.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.city_spaces.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_missing.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_empty.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_spaces.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_spaces.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.full_name_spaces.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.trim_city.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.trim_city.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.trim_city.city",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_mass.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_mass.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_affluent.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_affluent.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_private.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_private.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_unknown.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_unknown.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_unknown.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_missing.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.segment_empty.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "clients.multiple_errors.decision",
+      "passed": true
+    },
+    {
+      "name": "clients.multiple_errors.reasons",
+      "passed": true
+    },
+    {
+      "name": "clients.multiple_errors.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.partition",
+      "passed": true
+    },
+    {
+      "name": "accounts.marker_coverage",
+      "passed": true
+    },
+    {
+      "name": "accounts.raw_ids_not_in_clean",
+      "passed": true
+    },
+    {
+      "name": "accounts.valid.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.valid.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.integer_spaces.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.integer_spaces.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.integer_spaces.account_id",
+      "passed": true
+    },
+    {
+      "name": "accounts.leading_zeros.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.leading_zeros.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.leading_zeros.account_id",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.exponent_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.exponent_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.exponent_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.exponent_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.plus_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.plus_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.plus_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.plus_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.negative_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.negative_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.negative_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.negative_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.overflow_id.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.overflow_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.overflow_id.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.overflow_id.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.leap_date.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.leap_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_leap_date.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_leap_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_leap_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_leap_date.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_month.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_month.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_month.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.invalid_month.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_date.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_date.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_date.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_date.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_date.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.empty_date.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_active.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_active.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_blocked.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_blocked.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_unknown.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_unknown.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_unknown.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_unknown.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_missing.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_missing.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_empty.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.status_empty.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_debit.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_debit.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_credit.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_credit.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_savings.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_savings.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_unknown.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_unknown.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_unknown.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_unknown.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_missing.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_missing.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_empty.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.acc_type_empty.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.orphan_client.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.orphan_client.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.orphan_client.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.orphan_client.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_client.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_client.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_client.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.missing_client.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_client.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_client.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_client.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.zero_client.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_client.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_client.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_client.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.fractional_client.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_client.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_client.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_client.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.decimal_client.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.parent_rejected_at_source.decision",
+      "passed": true
+    },
+    {
+      "name": "accounts.parent_rejected_at_source.reasons",
+      "passed": true
+    },
+    {
+      "name": "accounts.parent_rejected_at_source.client_id_raw",
+      "passed": true
+    },
+    {
+      "name": "accounts.parent_rejected_at_source.account_id_raw",
+      "passed": true
+    },
+    {
+      "name": "transactions.partition",
+      "passed": true
+    },
+    {
+      "name": "transactions.marker_coverage",
+      "passed": true
+    },
+    {
+      "name": "transactions.valid.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.valid.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_completed.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_completed.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_pending.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_pending.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_failed.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_failed.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_unknown.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_unknown.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.status_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_purchase.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_purchase.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_withdrawal.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_withdrawal.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_transfer.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_transfer.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_refund.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_refund.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_unknown.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_unknown.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_missing.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_missing.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_empty.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tx_type_empty.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_tx_id.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_tx_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_tx_id.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_tx_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.spaces_tx_id.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.spaces_tx_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.tab_tx_id.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.tab_tx_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.newline_tx_id.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.newline_tx_id.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.orphan_account.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.orphan_account.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_account.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_account.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.zero_account.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.zero_account.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.rejected_account.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.rejected_account.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.other_currency.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.other_currency.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_currency.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_currency.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_currency.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_currency.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.invalid_ts.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.invalid_ts.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_ts.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.missing_ts.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_ts.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.empty_ts.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.timestamp_offset.decision",
+      "passed": true
+    },
+    {
+      "name": "transactions.timestamp_offset.reasons",
+      "passed": true
+    },
+    {
+      "name": "transactions.timestamp_offset.ts",
+      "passed": true
+    }
+  ],
+  "tables": {
+    "clients": {
+      "case_count": 31,
+      "rule_names": [
+        "client_id",
+        "city",
+        "full_name",
+        "segment",
+        "reg_date"
+      ],
+      "accepted": 8,
+      "rejected": 23,
+      "cases": [
+        {
+          "name": "valid",
+          "input": {
+            "client_id": "1",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "valid"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "valid"
+          }
+        },
+        {
+          "name": "integer_spaces",
+          "input": {
+            "client_id": " 104 ",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "integer_spaces"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 104,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "integer_spaces"
+          }
+        },
+        {
+          "name": "leading_zeros",
+          "input": {
+            "client_id": "00105",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "leading_zeros"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 105,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "leading_zeros"
+          }
+        },
+        {
+          "name": "fractional_id",
+          "input": {
+            "client_id": "101.5",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "fractional_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "fractional_id",
+            "client_id_raw": "101.5",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "decimal_id",
+          "input": {
+            "client_id": "102.0",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "decimal_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "decimal_id",
+            "client_id_raw": "102.0",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "exponent_id",
+          "input": {
+            "client_id": "103e0",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "exponent_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "exponent_id",
+            "client_id_raw": "103e0",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "plus_id",
+          "input": {
+            "client_id": "+106",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "plus_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "plus_id",
+            "client_id_raw": "+106",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "zero_id",
+          "input": {
+            "client_id": "0",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "zero_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": 0,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "zero_id",
+            "client_id_raw": "0",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "negative_id",
+          "input": {
+            "client_id": "-1",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "negative_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "negative_id",
+            "client_id_raw": "-1",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "missing_id",
+          "input": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "missing_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "missing_id",
+            "client_id_raw": null,
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "empty_id",
+          "input": {
+            "client_id": "",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "empty_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "empty_id",
+            "client_id_raw": "",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "overflow_id",
+          "input": {
+            "client_id": "9223372036854775808",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "overflow_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id"
+          ],
+          "actual_reasons": [
+            "client_id"
+          ],
+          "row": {
+            "client_id": null,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "overflow_id",
+            "client_id_raw": "9223372036854775808",
+            "reject_reason": "client_id"
+          }
+        },
+        {
+          "name": "leap_date",
+          "input": {
+            "client_id": "1012",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2024-02-29",
+            "_case": "leap_date"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1012,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2024-02-29",
+            "_case": "leap_date"
+          }
+        },
+        {
+          "name": "invalid_leap_date",
+          "input": {
+            "client_id": "1013",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2025-02-29",
+            "_case": "invalid_leap_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "reg_date"
+          ],
+          "actual_reasons": [
+            "reg_date"
+          ],
+          "row": {
+            "client_id": 1013,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": null,
+            "_case": "invalid_leap_date",
+            "client_id_raw": "1013",
+            "reject_reason": "reg_date"
+          }
+        },
+        {
+          "name": "invalid_month",
+          "input": {
+            "client_id": "1014",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-13-01",
+            "_case": "invalid_month"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "reg_date"
+          ],
+          "actual_reasons": [
+            "reg_date"
+          ],
+          "row": {
+            "client_id": 1014,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": null,
+            "_case": "invalid_month",
+            "client_id_raw": "1014",
+            "reject_reason": "reg_date"
+          }
+        },
+        {
+          "name": "missing_date",
+          "input": {
+            "client_id": "1015",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": null,
+            "_case": "missing_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "reg_date"
+          ],
+          "actual_reasons": [
+            "reg_date"
+          ],
+          "row": {
+            "client_id": 1015,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": null,
+            "_case": "missing_date",
+            "client_id_raw": "1015",
+            "reject_reason": "reg_date"
+          }
+        },
+        {
+          "name": "empty_date",
+          "input": {
+            "client_id": "1016",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "",
+            "_case": "empty_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "reg_date"
+          ],
+          "actual_reasons": [
+            "reg_date"
+          ],
+          "row": {
+            "client_id": 1016,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": null,
+            "_case": "empty_date",
+            "client_id_raw": "1016",
+            "reject_reason": "reg_date"
+          }
+        },
+        {
+          "name": "city_missing",
+          "input": {
+            "client_id": "1017",
+            "full_name": "Fixture",
+            "city": null,
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_missing"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "city"
+          ],
+          "actual_reasons": [
+            "city"
+          ],
+          "row": {
+            "client_id": 1017,
+            "full_name": "Fixture",
+            "city": null,
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_missing",
+            "client_id_raw": "1017",
+            "reject_reason": "city"
+          }
+        },
+        {
+          "name": "city_empty",
+          "input": {
+            "client_id": "1018",
+            "full_name": "Fixture",
+            "city": "",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_empty"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "city"
+          ],
+          "actual_reasons": [
+            "city"
+          ],
+          "row": {
+            "client_id": 1018,
+            "full_name": "Fixture",
+            "city": "",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_empty",
+            "client_id_raw": "1018",
+            "reject_reason": "city"
+          }
+        },
+        {
+          "name": "city_spaces",
+          "input": {
+            "client_id": "1019",
+            "full_name": "Fixture",
+            "city": "   ",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_spaces"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "city"
+          ],
+          "actual_reasons": [
+            "city"
+          ],
+          "row": {
+            "client_id": 1019,
+            "full_name": "Fixture",
+            "city": "",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "city_spaces",
+            "client_id_raw": "1019",
+            "reject_reason": "city"
+          }
+        },
+        {
+          "name": "full_name_missing",
+          "input": {
+            "client_id": "1020",
+            "full_name": null,
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_missing"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "full_name"
+          ],
+          "actual_reasons": [
+            "full_name"
+          ],
+          "row": {
+            "client_id": 1020,
+            "full_name": null,
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_missing",
+            "client_id_raw": "1020",
+            "reject_reason": "full_name"
+          }
+        },
+        {
+          "name": "full_name_empty",
+          "input": {
+            "client_id": "1021",
+            "full_name": "",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_empty"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "full_name"
+          ],
+          "actual_reasons": [
+            "full_name"
+          ],
+          "row": {
+            "client_id": 1021,
+            "full_name": "",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_empty",
+            "client_id_raw": "1021",
+            "reject_reason": "full_name"
+          }
+        },
+        {
+          "name": "full_name_spaces",
+          "input": {
+            "client_id": "1022",
+            "full_name": "   ",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_spaces"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "full_name"
+          ],
+          "actual_reasons": [
+            "full_name"
+          ],
+          "row": {
+            "client_id": 1022,
+            "full_name": "   ",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "full_name_spaces",
+            "client_id_raw": "1022",
+            "reject_reason": "full_name"
+          }
+        },
+        {
+          "name": "trim_city",
+          "input": {
+            "client_id": "1023",
+            "full_name": "Fixture",
+            "city": "  Moscow  ",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "trim_city"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1023,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "trim_city"
+          }
+        },
+        {
+          "name": "segment_mass",
+          "input": {
+            "client_id": "1024",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "segment_mass"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1024,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "mass",
+            "reg_date": "2026-01-01",
+            "_case": "segment_mass"
+          }
+        },
+        {
+          "name": "segment_affluent",
+          "input": {
+            "client_id": "1025",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "affluent",
+            "reg_date": "2026-01-01",
+            "_case": "segment_affluent"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1025,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "affluent",
+            "reg_date": "2026-01-01",
+            "_case": "segment_affluent"
+          }
+        },
+        {
+          "name": "segment_private",
+          "input": {
+            "client_id": "1026",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "private",
+            "reg_date": "2026-01-01",
+            "_case": "segment_private"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1026,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "private",
+            "reg_date": "2026-01-01",
+            "_case": "segment_private"
+          }
+        },
+        {
+          "name": "segment_unknown",
+          "input": {
+            "client_id": "1027",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "unsupported",
+            "reg_date": "2026-01-01",
+            "_case": "segment_unknown"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "segment"
+          ],
+          "actual_reasons": [
+            "segment"
+          ],
+          "row": {
+            "client_id": 1027,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "unsupported",
+            "reg_date": "2026-01-01",
+            "_case": "segment_unknown",
+            "client_id_raw": "1027",
+            "reject_reason": "segment"
+          }
+        },
+        {
+          "name": "segment_missing",
+          "input": {
+            "client_id": "1028",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": null,
+            "reg_date": "2026-01-01",
+            "_case": "segment_missing"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "segment"
+          ],
+          "actual_reasons": [
+            "segment"
+          ],
+          "row": {
+            "client_id": 1028,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": null,
+            "reg_date": "2026-01-01",
+            "_case": "segment_missing",
+            "client_id_raw": "1028",
+            "reject_reason": "segment"
+          }
+        },
+        {
+          "name": "segment_empty",
+          "input": {
+            "client_id": "1029",
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "",
+            "reg_date": "2026-01-01",
+            "_case": "segment_empty"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "segment"
+          ],
+          "actual_reasons": [
+            "segment"
+          ],
+          "row": {
+            "client_id": 1029,
+            "full_name": "Fixture",
+            "city": "Moscow",
+            "segment": "",
+            "reg_date": "2026-01-01",
+            "_case": "segment_empty",
+            "client_id_raw": "1029",
+            "reject_reason": "segment"
+          }
+        },
+        {
+          "name": "multiple_errors",
+          "input": {
+            "client_id": "1030",
+            "full_name": "Fixture",
+            "city": null,
+            "segment": "unknown",
+            "reg_date": "2026-01-01",
+            "_case": "multiple_errors"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "city",
+            "segment"
+          ],
+          "actual_reasons": [
+            "city",
+            "segment"
+          ],
+          "row": {
+            "client_id": 1030,
+            "full_name": "Fixture",
+            "city": null,
+            "segment": "unknown",
+            "reg_date": "2026-01-01",
+            "_case": "multiple_errors",
+            "client_id_raw": "1030",
+            "reject_reason": "city;segment"
+          }
+        }
+      ]
+    },
+    "accounts": {
+      "case_count": 34,
+      "rule_names": [
+        "account_id",
+        "client_id",
+        "orphan_client",
+        "balance_format",
+        "balance",
+        "open_date",
+        "status",
+        "acc_type"
+      ],
+      "accepted": 9,
+      "rejected": 25,
+      "cases": [
+        {
+          "name": "valid",
+          "input": {
+            "account_id": "1",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "valid"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "valid",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "integer_spaces",
+          "input": {
+            "account_id": " 104 ",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "integer_spaces"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 104,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "integer_spaces",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "leading_zeros",
+          "input": {
+            "account_id": "00105",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "leading_zeros"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 105,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "leading_zeros",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "fractional_id",
+          "input": {
+            "account_id": "101.5",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "fractional_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "fractional_id",
+            "account_id_raw": "101.5",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "decimal_id",
+          "input": {
+            "account_id": "102.0",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "decimal_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "decimal_id",
+            "account_id_raw": "102.0",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "exponent_id",
+          "input": {
+            "account_id": "103e0",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "exponent_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "exponent_id",
+            "account_id_raw": "103e0",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "plus_id",
+          "input": {
+            "account_id": "+106",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "plus_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "plus_id",
+            "account_id_raw": "+106",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "zero_id",
+          "input": {
+            "account_id": "0",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "zero_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 0,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "zero_id",
+            "account_id_raw": "0",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "negative_id",
+          "input": {
+            "account_id": "-1",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "negative_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "negative_id",
+            "account_id_raw": "-1",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "missing_id",
+          "input": {
+            "account_id": null,
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_id",
+            "account_id_raw": null,
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "empty_id",
+          "input": {
+            "account_id": "",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "empty_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "empty_id",
+            "account_id_raw": "",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "overflow_id",
+          "input": {
+            "account_id": "9223372036854775808",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "overflow_id"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id"
+          ],
+          "actual_reasons": [
+            "account_id"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "overflow_id",
+            "account_id_raw": "9223372036854775808",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "account_id"
+          }
+        },
+        {
+          "name": "leap_date",
+          "input": {
+            "account_id": "1012",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2024-02-29",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "leap_date"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1012,
+            "balance": "1.00",
+            "open_date": "2024-02-29",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "leap_date",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "invalid_leap_date",
+          "input": {
+            "account_id": "1013",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2025-02-29",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "invalid_leap_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "open_date"
+          ],
+          "actual_reasons": [
+            "open_date"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1013,
+            "balance": "1.00",
+            "open_date": null,
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "invalid_leap_date",
+            "account_id_raw": "1013",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "open_date"
+          }
+        },
+        {
+          "name": "invalid_month",
+          "input": {
+            "account_id": "1014",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-13-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "invalid_month"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "open_date"
+          ],
+          "actual_reasons": [
+            "open_date"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1014,
+            "balance": "1.00",
+            "open_date": null,
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "invalid_month",
+            "account_id_raw": "1014",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "open_date"
+          }
+        },
+        {
+          "name": "missing_date",
+          "input": {
+            "account_id": "1015",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": null,
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "open_date"
+          ],
+          "actual_reasons": [
+            "open_date"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1015,
+            "balance": "1.00",
+            "open_date": null,
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_date",
+            "account_id_raw": "1015",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "open_date"
+          }
+        },
+        {
+          "name": "empty_date",
+          "input": {
+            "account_id": "1016",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "empty_date"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "open_date"
+          ],
+          "actual_reasons": [
+            "open_date"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1016,
+            "balance": "1.00",
+            "open_date": null,
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "empty_date",
+            "account_id_raw": "1016",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "open_date"
+          }
+        },
+        {
+          "name": "status_active",
+          "input": {
+            "account_id": "1017",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "status_active"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1017,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "status_active",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "status_blocked",
+          "input": {
+            "account_id": "1018",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "blocked",
+            "acc_type": "debit",
+            "_case": "status_blocked"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1018,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "blocked",
+            "acc_type": "debit",
+            "_case": "status_blocked",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "status_unknown",
+          "input": {
+            "account_id": "1019",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "unsupported",
+            "acc_type": "debit",
+            "_case": "status_unknown"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1019,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "unsupported",
+            "acc_type": "debit",
+            "_case": "status_unknown",
+            "account_id_raw": "1019",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "status_missing",
+          "input": {
+            "account_id": "1020",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": null,
+            "acc_type": "debit",
+            "_case": "status_missing"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1020,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": null,
+            "acc_type": "debit",
+            "_case": "status_missing",
+            "account_id_raw": "1020",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "status_empty",
+          "input": {
+            "account_id": "1021",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "",
+            "acc_type": "debit",
+            "_case": "status_empty"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1021,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "",
+            "acc_type": "debit",
+            "_case": "status_empty",
+            "account_id_raw": "1021",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "acc_type_debit",
+          "input": {
+            "account_id": "1022",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "acc_type_debit"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1022,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "acc_type_debit",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "acc_type_credit",
+          "input": {
+            "account_id": "1023",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "credit",
+            "_case": "acc_type_credit"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1023,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "credit",
+            "_case": "acc_type_credit",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "acc_type_savings",
+          "input": {
+            "account_id": "1024",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "savings",
+            "_case": "acc_type_savings"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "client_id": 1,
+            "account_id": 1024,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "savings",
+            "_case": "acc_type_savings",
+            "client_exists": true
+          }
+        },
+        {
+          "name": "acc_type_unknown",
+          "input": {
+            "account_id": "1025",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "unsupported",
+            "_case": "acc_type_unknown"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "acc_type"
+          ],
+          "actual_reasons": [
+            "acc_type"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1025,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "unsupported",
+            "_case": "acc_type_unknown",
+            "account_id_raw": "1025",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "acc_type"
+          }
+        },
+        {
+          "name": "acc_type_missing",
+          "input": {
+            "account_id": "1026",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": null,
+            "_case": "acc_type_missing"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "acc_type"
+          ],
+          "actual_reasons": [
+            "acc_type"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1026,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": null,
+            "_case": "acc_type_missing",
+            "account_id_raw": "1026",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "acc_type"
+          }
+        },
+        {
+          "name": "acc_type_empty",
+          "input": {
+            "account_id": "1027",
+            "client_id": "1",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "",
+            "_case": "acc_type_empty"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "acc_type"
+          ],
+          "actual_reasons": [
+            "acc_type"
+          ],
+          "row": {
+            "client_id": 1,
+            "account_id": 1027,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "",
+            "_case": "acc_type_empty",
+            "account_id_raw": "1027",
+            "client_id_raw": "1",
+            "balance_raw": "1.00",
+            "client_exists": true,
+            "reject_reason": "acc_type"
+          }
+        },
+        {
+          "name": "orphan_client",
+          "input": {
+            "account_id": "1028",
+            "client_id": "999999",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "orphan_client"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": 999999,
+            "account_id": 1028,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "orphan_client",
+            "account_id_raw": "1028",
+            "client_id_raw": "999999",
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "orphan_client"
+          }
+        },
+        {
+          "name": "missing_client",
+          "input": {
+            "account_id": "1029",
+            "client_id": null,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_client"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": null,
+            "account_id": 1029,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "missing_client",
+            "account_id_raw": "1029",
+            "client_id_raw": null,
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "client_id;orphan_client"
+          }
+        },
+        {
+          "name": "zero_client",
+          "input": {
+            "account_id": "1030",
+            "client_id": "0",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "zero_client"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": 0,
+            "account_id": 1030,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "zero_client",
+            "account_id_raw": "1030",
+            "client_id_raw": "0",
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "client_id;orphan_client"
+          }
+        },
+        {
+          "name": "fractional_client",
+          "input": {
+            "account_id": "1031",
+            "client_id": "1.5",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "fractional_client"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": null,
+            "account_id": 1031,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "fractional_client",
+            "account_id_raw": "1031",
+            "client_id_raw": "1.5",
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "client_id;orphan_client"
+          }
+        },
+        {
+          "name": "decimal_client",
+          "input": {
+            "account_id": "1032",
+            "client_id": "1.0",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "decimal_client"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "client_id",
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": null,
+            "account_id": 1032,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "decimal_client",
+            "account_id_raw": "1032",
+            "client_id_raw": "1.0",
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "client_id;orphan_client"
+          }
+        },
+        {
+          "name": "parent_rejected_at_source",
+          "input": {
+            "account_id": "1033",
+            "client_id": "101",
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "parent_rejected_at_source"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "orphan_client"
+          ],
+          "actual_reasons": [
+            "orphan_client"
+          ],
+          "row": {
+            "client_id": 101,
+            "account_id": 1033,
+            "balance": "1.00",
+            "open_date": "2026-01-01",
+            "status": "active",
+            "acc_type": "debit",
+            "_case": "parent_rejected_at_source",
+            "account_id_raw": "1033",
+            "client_id_raw": "101",
+            "balance_raw": "1.00",
+            "client_exists": null,
+            "reject_reason": "orphan_client"
+          }
+        }
+      ]
+    },
+    "transactions": {
+      "case_count": 30,
+      "rule_names": [
+        "tx_id",
+        "account_id",
+        "orphan_account",
+        "amount_format",
+        "amount",
+        "currency",
+        "ts",
+        "status",
+        "tx_type"
+      ],
+      "accepted": 9,
+      "rejected": 21,
+      "cases": [
+        {
+          "name": "valid",
+          "input": {
+            "tx_id": "tx-1",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "valid",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "valid",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "status_completed",
+          "input": {
+            "tx_id": "tx-1001",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_completed",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1001",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_completed",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "status_pending",
+          "input": {
+            "tx_id": "tx-1002",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_pending",
+            "status": "pending",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1002",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_pending",
+            "status": "pending",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "status_failed",
+          "input": {
+            "tx_id": "tx-1003",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_failed",
+            "status": "failed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1003",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_failed",
+            "status": "failed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "status_unknown",
+          "input": {
+            "tx_id": "tx-1004",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_unknown",
+            "status": "unsupported",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1004",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_unknown",
+            "status": "unsupported",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "status_missing",
+          "input": {
+            "tx_id": "tx-1005",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_missing",
+            "status": null,
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1005",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_missing",
+            "status": null,
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "status_empty",
+          "input": {
+            "tx_id": "tx-1006",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_empty",
+            "status": "",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "status"
+          ],
+          "actual_reasons": [
+            "status"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1006",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "status_empty",
+            "status": "",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "status"
+          }
+        },
+        {
+          "name": "tx_type_purchase",
+          "input": {
+            "tx_id": "tx-1007",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "tx_type_purchase",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1007",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "tx_type_purchase",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "tx_type_withdrawal",
+          "input": {
+            "tx_id": "tx-1008",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "withdrawal",
+            "merchant": "tx_type_withdrawal",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1008",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "withdrawal",
+            "merchant": "tx_type_withdrawal",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "tx_type_transfer",
+          "input": {
+            "tx_id": "tx-1009",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "transfer",
+            "merchant": "tx_type_transfer",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1009",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "transfer",
+            "merchant": "tx_type_transfer",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "tx_type_refund",
+          "input": {
+            "tx_id": "tx-1010",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "refund",
+            "merchant": "tx_type_refund",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1010",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "refund",
+            "merchant": "tx_type_refund",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        },
+        {
+          "name": "tx_type_unknown",
+          "input": {
+            "tx_id": "tx-1011",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "unsupported",
+            "merchant": "tx_type_unknown",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_type"
+          ],
+          "actual_reasons": [
+            "tx_type"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1011",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "unsupported",
+            "merchant": "tx_type_unknown",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_type"
+          }
+        },
+        {
+          "name": "tx_type_missing",
+          "input": {
+            "tx_id": "tx-1012",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": null,
+            "merchant": "tx_type_missing",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_type"
+          ],
+          "actual_reasons": [
+            "tx_type"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1012",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": null,
+            "merchant": "tx_type_missing",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_type"
+          }
+        },
+        {
+          "name": "tx_type_empty",
+          "input": {
+            "tx_id": "tx-1013",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "",
+            "merchant": "tx_type_empty",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_type"
+          ],
+          "actual_reasons": [
+            "tx_type"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1013",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "",
+            "merchant": "tx_type_empty",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_type"
+          }
+        },
+        {
+          "name": "missing_tx_id",
+          "input": {
+            "tx_id": null,
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_id"
+          ],
+          "actual_reasons": [
+            "tx_id"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": null,
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_id"
+          }
+        },
+        {
+          "name": "empty_tx_id",
+          "input": {
+            "tx_id": "",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "empty_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_id"
+          ],
+          "actual_reasons": [
+            "tx_id"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "empty_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_id"
+          }
+        },
+        {
+          "name": "spaces_tx_id",
+          "input": {
+            "tx_id": "   ",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "spaces_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_id"
+          ],
+          "actual_reasons": [
+            "tx_id"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "   ",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "spaces_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_id"
+          }
+        },
+        {
+          "name": "tab_tx_id",
+          "input": {
+            "tx_id": "\t",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "tab_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_id"
+          ],
+          "actual_reasons": [
+            "tx_id"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "\t",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "tab_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_id"
+          }
+        },
+        {
+          "name": "newline_tx_id",
+          "input": {
+            "tx_id": "\n",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "newline_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "tx_id"
+          ],
+          "actual_reasons": [
+            "tx_id"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "\n",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "newline_tx_id",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "tx_id"
+          }
+        },
+        {
+          "name": "orphan_account",
+          "input": {
+            "tx_id": "tx-1019",
+            "batch_id": "demo-001",
+            "account_id": 999999,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "orphan_account",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "orphan_account"
+          ],
+          "actual_reasons": [
+            "orphan_account"
+          ],
+          "row": {
+            "account_id": 999999,
+            "tx_id": "tx-1019",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "orphan_account",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": null,
+            "reject_reason": "orphan_account"
+          }
+        },
+        {
+          "name": "missing_account",
+          "input": {
+            "tx_id": "tx-1020",
+            "batch_id": "demo-001",
+            "account_id": null,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_account",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id",
+            "orphan_account"
+          ],
+          "actual_reasons": [
+            "account_id",
+            "orphan_account"
+          ],
+          "row": {
+            "account_id": null,
+            "tx_id": "tx-1020",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_account",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": null,
+            "reject_reason": "account_id;orphan_account"
+          }
+        },
+        {
+          "name": "zero_account",
+          "input": {
+            "tx_id": "tx-1021",
+            "batch_id": "demo-001",
+            "account_id": 0,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "zero_account",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "account_id",
+            "orphan_account"
+          ],
+          "actual_reasons": [
+            "account_id",
+            "orphan_account"
+          ],
+          "row": {
+            "account_id": 0,
+            "tx_id": "tx-1021",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "zero_account",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": null,
+            "reject_reason": "account_id;orphan_account"
+          }
+        },
+        {
+          "name": "rejected_account",
+          "input": {
+            "tx_id": "tx-1022",
+            "batch_id": "demo-001",
+            "account_id": 101,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "rejected_account",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "orphan_account"
+          ],
+          "actual_reasons": [
+            "orphan_account"
+          ],
+          "row": {
+            "account_id": 101,
+            "tx_id": "tx-1022",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "rejected_account",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": null,
+            "reject_reason": "orphan_account"
+          }
+        },
+        {
+          "name": "other_currency",
+          "input": {
+            "tx_id": "tx-1023",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "USD",
+            "tx_type": "purchase",
+            "merchant": "other_currency",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "currency"
+          ],
+          "actual_reasons": [
+            "currency"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1023",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "USD",
+            "tx_type": "purchase",
+            "merchant": "other_currency",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "currency"
+          }
+        },
+        {
+          "name": "missing_currency",
+          "input": {
+            "tx_id": "tx-1024",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": null,
+            "tx_type": "purchase",
+            "merchant": "missing_currency",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "currency"
+          ],
+          "actual_reasons": [
+            "currency"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1024",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": null,
+            "tx_type": "purchase",
+            "merchant": "missing_currency",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "currency"
+          }
+        },
+        {
+          "name": "empty_currency",
+          "input": {
+            "tx_id": "tx-1025",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "",
+            "tx_type": "purchase",
+            "merchant": "empty_currency",
+            "status": "completed",
+            "ts": "2026-01-01T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "currency"
+          ],
+          "actual_reasons": [
+            "currency"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1025",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "",
+            "tx_type": "purchase",
+            "merchant": "empty_currency",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "currency"
+          }
+        },
+        {
+          "name": "invalid_ts",
+          "input": {
+            "tx_id": "tx-1026",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "invalid_ts",
+            "status": "completed",
+            "ts": "2025-02-29T00:00:00Z"
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "ts"
+          ],
+          "actual_reasons": [
+            "ts"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1026",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "invalid_ts",
+            "status": "completed",
+            "ts": null,
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "ts"
+          }
+        },
+        {
+          "name": "missing_ts",
+          "input": {
+            "tx_id": "tx-1027",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_ts",
+            "status": "completed",
+            "ts": null
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "ts"
+          ],
+          "actual_reasons": [
+            "ts"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1027",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "missing_ts",
+            "status": "completed",
+            "ts": null,
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "ts"
+          }
+        },
+        {
+          "name": "empty_ts",
+          "input": {
+            "tx_id": "tx-1028",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "empty_ts",
+            "status": "completed",
+            "ts": ""
+          },
+          "accepted": false,
+          "expected_reasons": [
+            "ts"
+          ],
+          "actual_reasons": [
+            "ts"
+          ],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1028",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "empty_ts",
+            "status": "completed",
+            "ts": null,
+            "amount_raw": "1.00",
+            "account_exists": true,
+            "reject_reason": "ts"
+          }
+        },
+        {
+          "name": "timestamp_offset",
+          "input": {
+            "tx_id": "tx-1029",
+            "batch_id": "demo-001",
+            "account_id": 1,
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "timestamp_offset",
+            "status": "completed",
+            "ts": "2026-01-01T03:00:00+03:00"
+          },
+          "accepted": true,
+          "expected_reasons": [],
+          "actual_reasons": [],
+          "row": {
+            "account_id": 1,
+            "tx_id": "tx-1029",
+            "batch_id": "demo-001",
+            "amount": "1.00",
+            "currency": "RUB",
+            "tx_type": "purchase",
+            "merchant": "timestamp_offset",
+            "status": "completed",
+            "ts": "2026-01-01 00:00:00",
+            "account_exists": true
+          }
+        }
+      ]
+    }
+  },
+  "runner_sha256": "3c38a12591efd4b3343ebeed6d803a67b45214a57b580349eed776018e248ac6",
+  "helper_sha256": "2130f270ab1ab9111bafc8d9d7d473086d4e6f4d1fddb9add0cceec7a984c255",
+  "scope": "Actual notebook cells 4, 6, 8 and save_clean; JVM literal fixtures; no storage writes; no CSV parser, malformed JSON routing or performance test.",
+  "notebook_sha256": "a6d81906166f8261fadcf76b0e969017415b7cc68bf7fc1998bdef10db6e35e3",
+  "extraction": {
+    "money_pattern_present": true,
+    "executed_ast_sha256": {
+      "setup": "a6afe1d4406a7432b05ee53b1f1fa0ac348528bcc1f11df69e523e5955636764",
+      "cell_6": "b1bff351f3e1a516bcd94ba729ca222dc0eca6e7f641446e3b6b9f890f9d9829",
+      "cell_8": "890c4f8c7447948c4626d4cc9671cc3ffd6b100b8ef60a7de6ec58a309523004"
+    },
+    "omitted_statements": [
+      {
+        "cell": 2,
+        "statement": "bad.write.format('delta').option('overwriteSchema', 'true').mode('overwrite').save(f's3a://silver/v2/quarantine/{name}')"
+      },
+      {
+        "cell": 2,
+        "statement": "clean.write.format('delta').mode('overwrite').save(f's3a://silver/v2/{name}')"
+      },
+      {
+        "cell": 2,
+        "statement": "print(f'{name}: вход={n_raw}, отклонено={n_bad}, точных повторов={n_good - n_clean}, принято={n_clean}')"
+      },
+      {
+        "cell": 2,
+        "statement": "bad.groupBy('reject_reason').count().show(truncate=False)"
+      },
+      {
+        "cell": 8,
+        "statement": "malformed.write.format('delta').mode('overwrite').save('s3a://silver/v2/quarantine/malformed_json')"
+      },
+      {
+        "cell": 8,
+        "statement": "print('Сообщений без распознаваемого batch:', malformed.count())"
+      },
+      {
+        "cell": 8,
+        "statement": "tx_clean.printSchema()"
+      }
+    ]
+  },
+  "clients_ast_sha256": "07a2d7bf4f59aaee6f39636b6e45c7dc61e0c56db71652a500115391b48a182a",
+  "course_checks_sha256": "b8d4bd79ed81901224ed7ca3930e17009f8f155dbee709a8c56c13077f7cd008",
+  "spark_version": "3.5.3",
+  "mismatches": [],
+  "finished_utc": "2026-09-21T13:38:30.149529+00:00"
+}

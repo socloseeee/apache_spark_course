@@ -1,0 +1,17 @@
+<h2>Кэширование на диск</h2>
+<p>Дорогой промежуточный результат нужен несколько раз. В этом упражнении выберем <code>DISK_ONLY</code>, чтобы сохранять его блоки на диске, не занимая память под кэш. В настоящем Spark подходящий уровень выбирают по ресурсам и измерениям: большой размер результата сам по себе не делает <code>DISK_ONLY</code> единственным вариантом.</p>
+<p><strong>Что проверяем в тренажёре.</strong> Авторский модуль позволяет вызвать <code>persist</code> и проверить пометку <code>is_cached</code>; физической записи блоков на диск здесь нет. Сам флаг не показывает выбранный уровень хранения. В настоящем Spark уровень можно посмотреть через <code>df.storageLevel</code>, а наличие сохранённых блоков — в Spark UI после действия.</p>
+<h3>Задание</h3>
+<p>В шаблоне прочитан <code>transactions.csv</code> в DataFrame <code>df</code>, импортирован <code>StorageLevel</code>. Под комментарием <code># Решение</code>:</p>
+<ol>
+<li>Вызовите <code>df.persist(StorageLevel.DISK_ONLY)</code>.</li>
+<li>Выведите <code>df.is_cached</code> через <code>print</code>.</li>
+</ol>
+<p><strong>Формат входных данных</strong></p>
+<p>CSV-файл <code>transactions.csv</code>: <code>c_id</code> (целое), <code>amt</code> (целое).</p>
+<p><strong>Формат выходных данных</strong></p>
+<p>Одно значение <code>True</code>, выведенное через <code>print</code>.</p>
+<details><summary><strong>Подсказка</strong></summary>
+<pre><code class="language-python">df.persist(StorageLevel.DISK_ONLY)
+print(df.is_cached)</code></pre>
+</details>

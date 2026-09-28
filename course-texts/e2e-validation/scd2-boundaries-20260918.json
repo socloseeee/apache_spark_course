@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests": 1,
+  "failed": 0,
+  "skipped": 0,
+  "test": "test_scd2_same_day_changes_delimiters_nulls_boundaries_and_full_replay",
+  "timestamp_utc": "2026-09-18T18:32:12.567551+00:00",
+  "duration_seconds": 173.32,
+  "test_source_sha256": "f66a599c5ac37690336c2308d0db66d16b60479a24c1364b3a6a3e77fb620a6a",
+  "course_checks_sha256": "b8d4bd79ed81901224ed7ca3930e17009f8f155dbee709a8c56c13077f7cd008",
+  "executed_sources_match_repository": true,
+  "spark": "3.5.3",
+  "delta": "3.3.0",
+  "scope": "Two same-day changes, colliding delimiter/NULL representations, exact history, temporal boundaries and replay of all three batches. No forced commit failure."
+}

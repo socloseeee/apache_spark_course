@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+<title id="title">Как DataFrame попадает в кэш</title>
+<desc id="desc">cache() помечает DataFrame для кэширования. Action вычисляет нужные партиции и сохраняет блоки. Следующие actions могут читать сохранённые блоки. unpersist() освобождает кэш. Пример показывает частично заполненный кэш. is_cached=True — признак пометки, не полного заполнения кэша.</desc>
+<rect width="1400" height="800" fill="#F6F8FC"/>
+<text x="65" y="62" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#087F8C">SPARK  /  РАЗБИРАЕМ МЕХАНИКУ</text>
+<text x="65" y="133" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#152C48">Как DataFrame попадает в кэш</text>
+<text x="65" y="177" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#52647A">Сохраняем вычисленные блоки для повторного использования.</text>
+<rect x="65" y="235" width="380" height="300" rx="16" fill="white" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="510" y="235" width="380" height="300" rx="16" fill="white" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="955" y="235" width="380" height="300" rx="16" fill="white" stroke="#D5DEEA" stroke-width="2"/>
+<text x="87" y="282" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#087F8C">1. cache() — пометка</text>
+<text x="87" y="333" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">Данные ещё не вычислены</text>
+<text x="87" y="410" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#52647A">Блоков в кэше пока нет</text>
+<rect x="87" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="167" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="247" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="327" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<text x="532" y="282" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#087F8C">2. action</text>
+<text x="532" y="333" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">Вычисляет нужные партиции</text>
+<text x="532" y="368" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">и сохраняет блоки</text>
+<text x="532" y="410" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#52647A">Блоки появляются в кэше</text>
+<rect x="532" y="439" width="62" height="48" rx="6" fill="#087F8C" stroke="#087F8C" stroke-width="2"/>
+<path d="M546,453 H580" stroke="white" stroke-width="2"/>
+<path d="M546,463 H580" stroke="white" stroke-width="2"/>
+<path d="M546,473 H580" stroke="white" stroke-width="2"/>
+<rect x="612" y="439" width="62" height="48" rx="6" fill="#087F8C" stroke="#087F8C" stroke-width="2"/>
+<path d="M626,453 H660" stroke="white" stroke-width="2"/>
+<path d="M626,463 H660" stroke="white" stroke-width="2"/>
+<path d="M626,473 H660" stroke="white" stroke-width="2"/>
+<rect x="692" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="772" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<text x="977" y="282" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#087F8C">3. Следующие actions</text>
+<text x="977" y="333" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">Могут читать</text>
+<text x="977" y="368" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">сохранённые блоки</text>
+<text x="977" y="410" font-family="Arial, sans-serif" font-size="21" font-weight="400" fill="#52647A">Повторное использование</text>
+<rect x="977" y="439" width="62" height="48" rx="6" fill="#087F8C" stroke="#087F8C" stroke-width="2"/>
+<path d="M991,453 H1025" stroke="white" stroke-width="2"/>
+<path d="M991,463 H1025" stroke="white" stroke-width="2"/>
+<path d="M991,473 H1025" stroke="white" stroke-width="2"/>
+<rect x="1057" y="439" width="62" height="48" rx="6" fill="#087F8C" stroke="#087F8C" stroke-width="2"/>
+<path d="M1071,453 H1105" stroke="white" stroke-width="2"/>
+<path d="M1071,463 H1105" stroke="white" stroke-width="2"/>
+<path d="M1071,473 H1105" stroke="white" stroke-width="2"/>
+<rect x="1137" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<rect x="1217" y="439" width="62" height="48" rx="6" fill="#F6F8FC" stroke="#D5DEEA" stroke-width="2"/>
+<path d="M455,369 L497,369" stroke="#315BC6" stroke-width="4"/><path d="M497,369 l-13,-8 v16 z" fill="#315BC6"/>
+<path d="M900,369 L942,369" stroke="#315BC6" stroke-width="4"/><path d="M942,369 l-13,-8 v16 z" fill="#315BC6"/>
+<text x="65" y="575" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#52647A">Схематичный пример: кэш может быть заполнен частично.</text>
+<rect x="65" y="611" width="1270" height="75" rx="16" fill="white" stroke="#D5DEEA" stroke-width="2"/>
+<text x="87" y="659" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#315BC6">unpersist() освобождает кэш</text>
+<text x="65" y="748" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#087F8C">is_cached=True — признак пометки, не полного заполнения кэша.</text>
+</svg>

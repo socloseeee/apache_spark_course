@@ -1,0 +1,109 @@
+{
+  "started_utc": "2026-09-18T18:31:55.001687+00:00",
+  "run_id": "540dadae4f7242d0",
+  "notebook_sha256": "7a7a42a549df4bd3986fa7a83c2ab1ad8f48ae25f63978bd830f2f7c09c6d80d",
+  "temporary_database": "course_pubcheck_540dadae4f7242d0",
+  "temporary_bucket": "course-pubcheck-540dadae4f7242d0",
+  "checks": {
+    "real_missing_source_rejected": true,
+    "previous_table_readable_after_source_failure": true,
+    "real_create_staging_rejected": true,
+    "source_read_succeeded_before_create_failure": true,
+    "create_statement_attempted_and_failed": true,
+    "no_switch_after_failure": true,
+    "previous_table_readable_after_create_failure": true,
+    "successful_publication_replaced_old_data": true,
+    "real_exchange_completed": true,
+    "old_version_available_under_staging_name": true,
+    "existing_gold_tables_and_objects_unchanged": true
+  },
+  "events": [
+    {
+      "phase": "real_source_read_failure",
+      "verb": "SELECT",
+      "succeeded": false
+    },
+    {
+      "phase": "real_staging_create_failure",
+      "verb": "SELECT",
+      "succeeded": true
+    },
+    {
+      "phase": "real_staging_create_failure",
+      "verb": "CREATE",
+      "succeeded": false
+    },
+    {
+      "phase": "successful_publication",
+      "verb": "SELECT",
+      "succeeded": true
+    },
+    {
+      "phase": "successful_publication",
+      "verb": "CREATE",
+      "succeeded": true
+    },
+    {
+      "phase": "successful_publication",
+      "verb": "SELECT",
+      "succeeded": true
+    },
+    {
+      "phase": "successful_publication",
+      "verb": "EXISTS",
+      "succeeded": true
+    },
+    {
+      "phase": "successful_publication",
+      "verb": "EXCHANGE",
+      "succeeded": true
+    }
+  ],
+  "scope": "Real source-read and staging-CREATE failures, then successful EXCHANGE; no commit crash, timeout, concurrent writer, or multi-table atomicity test.",
+  "passed": true,
+  "functions_ast_sha256": "9743bd77a7e9e3163e3650fa4f1a564c72011b40d40ce1e276dc391f41bba8c2",
+  "clickhouse_version": "25.3.2.39",
+  "protected_before": {
+    "tables_sha256": {
+      "volume_by_segment": "f43c7670fdd80654bf30422856621008bc292d105a0b625f84277cf81c64cf36",
+      "top_clients": "ca12c393cabf1de5974a221820b9d48443aaf27c7ecf71e056406f0fc24bf5b1",
+      "daily_purchases": "23d6c7b4d683cb569741b1eaa7c85297458cc741b7753bdcef69bd3a9e1a4b02"
+    },
+    "gold_objects_sha256": "87ad16cff1e7a9744ccc77eee351d10e0d1ac1b761eac3edaaad2c7c56483d54",
+    "gold_object_count": 6
+  },
+  "fixture_sha256": "6116e958f360e5ba24dbc315d2d6a4e68e955604be68ee58322d82de59593199",
+  "old_rows": [
+    {
+      "segment": "old",
+      "purchase_volume": "7.77",
+      "tx_count": "1"
+    }
+  ],
+  "new_rows": [
+    {
+      "segment": "new",
+      "purchase_volume": "25.25",
+      "tx_count": "2"
+    },
+    {
+      "segment": "other",
+      "purchase_volume": "10",
+      "tx_count": "1"
+    }
+  ],
+  "protected_after": {
+    "tables_sha256": {
+      "volume_by_segment": "f43c7670fdd80654bf30422856621008bc292d105a0b625f84277cf81c64cf36",
+      "top_clients": "ca12c393cabf1de5974a221820b9d48443aaf27c7ecf71e056406f0fc24bf5b1",
+      "daily_purchases": "23d6c7b4d683cb569741b1eaa7c85297458cc741b7753bdcef69bd3a9e1a4b02"
+    },
+    "gold_objects_sha256": "87ad16cff1e7a9744ccc77eee351d10e0d1ac1b761eac3edaaad2c7c56483d54",
+    "gold_object_count": 6
+  },
+  "cleanup": {
+    "temporary_database_removed": true,
+    "temporary_bucket_removed": true
+  },
+  "finished_utc": "2026-09-18T18:31:56.458174+00:00"
+}
